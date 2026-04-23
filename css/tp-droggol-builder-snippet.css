@@ -1,0 +1,59 @@
+/*Start tp-droggol-builder-snippet Style*/
+.tp-droggol-builder-snippet .row .card,
+.edadcom-offers-products .o_not_editable .card{
+    border-color: transparent !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 12px !important;
+    padding: 10px !important;
+}
+.tp-droggol-builder-snippet .row .card .d_product_box .d_product_info .d_product_info_lev_2 .small,
+.edadcom-offers-products .o_not_editable .card .d_product_box .d_product_info .d_product_info_lev_2 .small{
+    display: none !important;
+}
+.tp-droggol-builder-snippet .row .card .d_product_box .d_product_info .dr_category_lable{
+    display: none !important;
+}
+.tp-droggol-builder-snippet .row .card .d_product_box .d_product_info .card-title{
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    color: #000000 !important;
+}
+.tp-droggol-builder-snippet .row .card .d_product_box .d_product_info .d_product_info_lev_2 .d-product-price,
+.edadcom-offers-products .o_not_editable .card .d_product_box .d_product_info .d_product_info_lev_2 .d-product-price{
+    margin-top: 10px !important;
+}
+.tp-droggol-builder-snippet .row .card .d_product_box .d_product_info .d_product_info_lev_2 .d-add_to_cart_block button,
+.edadcom-offers-products .o_not_editable .card .d_product_box .d_product_info .d_product_info_lev_2 .d-add_to_cart_block button{
+    border-radius: 4px !important;
+}
+.tp-droggol-builder-snippet .row .card .d_product_box .tp-actions i,
+.edadcom-offers-products .o_not_editable .card .d_product_box .tp-actions i{
+    border-color: transparent !important;
+    background-color: white !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important;
+}
+.edadcom-offers-products .o_not_editable .owl-prev,
+.edadcom-offers-products .o_not_editable .owl-next{
+    border: none !important;
+    background-color: #F26122 !important;
+}
+.edadcom-offers-products .o_not_editable .owl-prev i,
+.edadcom-offers-products .o_not_editable .owl-next i{
+    color: white !important;
+}
+.tp-droggol-builder-snippet .row .card,
+.edadcom-offers-products .o_not_editable .card{
+  min-width: 180px !important;
+}
+@media (max-width: 520px) {
+  .tp-droggol-builder-snippet .row .card,
+  .edadcom-offers-products .o_not_editable .card{
+    min-width: 160px !important;
+  }
+.tp-droggol-builder-snippet .row .card .d_product_box .d_product_info .d_product_info_lev_2 .d-add_to_cart_block button,
+.edadcom-offers-products .o_not_editable .card .d_product_box .d_product_info .d_product_info_lev_2 .d-add_to_cart_block button{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+}
+/*End tp-droggol-builder-snippet Style*/

@@ -1,0 +1,75 @@
+/*Start s_carousel_wrapper Style*/
+.s_carousel_wrapper{
+  min-width: 100% !important;
+  margin-top: 20px !important;
+  cursor: pointer !important; 
+}
+.s_carousel_wrapper .s_carousel,
+.s_carousel_wrapper .s_carousel .carousel-inner {
+   overflow-y: hidden !important;
+}
+.s_carousel_wrapper .s_carousel ol,
+.s_carousel_wrapper .s_carousel .carousel-control-prev,
+.s_carousel_wrapper .s_carousel .carousel-control-next{
+  display: none !important;
+}
+.s_carousel_wrapper .s_carousel .carousel-inner .carousel-item{
+  min-width: 100%;
+  object-fit: contain !important;
+}
+.carousel-item {
+    min-width: 100%;
+}
+.s_carousel_wrapper .s_carousel .carousel-inner .carousel-item {
+   min-width: 100% !important;
+    height: auto !important;
+    padding: 0 !important;
+    padding-top: 780px !important;  
+}
+@media (max-width: 2300px){
+    .s_carousel_wrapper .s_carousel .carousel-inner .carousel-item {
+     padding-top: 680px !important;
+  }
+}
+@media (max-width: 1900px){
+    .s_carousel_wrapper .s_carousel .carousel-inner .carousel-item {
+     padding-top: 600px !important;
+  }
+}
+@media (max-width: 1500px){
+    .s_carousel_wrapper .s_carousel .carousel-inner .carousel-item {
+     padding-top: 500px !important;
+  }
+}
+@media (max-width: 1200px){
+    .s_carousel_wrapper .s_carousel .carousel-inner .carousel-item {
+     padding-top: 420px !important;
+  }
+}
+@media (max-width: 992px){
+    .s_carousel_wrapper .s_carousel .carousel-inner .carousel-item {
+     padding-top: 350px !important;
+  }
+}
+@media (max-width: 800px){
+    .s_carousel_wrapper .s_carousel .carousel-inner .carousel-item {
+     padding-top: 250px !important;
+  }
+}
+@media (max-width: 650px){
+    .s_carousel_wrapper .s_carousel .carousel-inner .carousel-item {
+     padding-top: 200px !important;
+  }
+}
+@media (max-width: 450px){
+  .s_carousel_wrapper{
+    margin-top: 15px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+    .s_carousel_wrapper .s_carousel .carousel-inner .carousel-item {
+      padding-top: 170px !important;
+  }
+}
+
+/*End s_carousel_wrapper Style*/

@@ -1,0 +1,30 @@
+/*Start s_icon_block_5 Style*/
+.s_icon_block_5 .row .col-12{
+  height: 120px !important;
+  padding: 16px !important;
+  background-color: #FEEEE7 !important;
+  border-radius: 12px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between !important;
+  align-items: center !important;
+  cursor: pointer;
+}
+.s_icon_block_5 .row .col-12 img{
+  width: 70px !important;
+  height: 50px !important;
+  object-fit: contain !important;
+}
+.s_icon_block_5 .row .col-12 h6{
+  font-size: 12px !important;
+  font-weight: 600;
+  color: #0C0D0D;
+}
+.s_icon_block_5{
+  overflow: hidden !important;
+}
+.s_icon_block_5 .row{
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+}
+/*End s_icon_block_5 Style*/

@@ -1,0 +1,102 @@
+/*Start Style tp-preheader Style*/
+.tp-preheader {
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+header .navbar .container-fluid #top_menu li:nth-child(2){
+    display: none !important;
+}
+header .navbar .container-fluid .o_searchbar_form{
+    border-radius: 8px !important;
+}
+header .navbar .container-fluid .o_searchbar_form .input-group input,
+header .navbar .container-fluid .o_searchbar_form .input-group button{
+    background-color: transparent !important;
+}
+header .navbar .container-fluid .o_searchbar_form .input-group input{
+  border-radius: 8px !important;
+}
+header .navbar .container-fluid .o_searchbar_form .input-group button{
+    border: none !important;
+}
+header .navbar .container-fluid .o_searchbar_form .input-group input{
+    font-size: 16px;
+    font-weight: 400;
+    color: #8A8C8F;
+    height: 48px !important;
+    border-color: #A4A5A8 !important;
+}
+header .navbar .container-fluid .o_searchbar_form .input-group input::placeholder{
+    padding-left: 4px;
+}
+header .navbar .container-fluid .o_searchbar_form .input-group button i{
+    color: #8A8C8F  !important;
+}
+header .navbar .container-fluid .tp-account-info div i{
+    font-size: 22px !important;
+    color: #57595B !important;
+    transition: color 0.5s ease;
+}
+header .navbar .container-fluid .tp-account-info div small{
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #57595B !important;
+    transition: color 0.5s ease;
+}
+header .navbar .container-fluid .tp-account-info div:hover i,
+header .navbar .container-fluid .tp-account-info div:hover small{
+    color: #F26426 !important;
+}
+header .navbar .container-fluid .tp-account-info div sup{
+    background-color: #57595B !important;
+    transition: background-color 0.5s ease;
+}
+header .navbar .container-fluid .tp-account-info div:hover sup{
+    background-color: #F26426 !important;
+}
+header .navbar .container-fluid .o_searchbar_form{
+    margin-left: -200px !important;
+    margin-right: 200px !important;
+}
+@media (max-width: 1300px){
+    header .navbar .container-fluid .o_searchbar_form{
+        margin-left: -100px !important;
+        margin-right: 100px !important;
+    }
+}
+@media (max-width: 1100px){
+    header .navbar .container-fluid .o_searchbar_form{
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+}
+header .navbar .container-fluid .nav .dropdown a.dropdown-toggle{
+    background-color: transparent !important;
+}
+header .navbar .container-fluid .nav .dropdown a span{
+    color: #57595B !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    transition: color 0.5s ease;
+}
+header .navbar .container-fluid .nav .dropdown a i,
+header .navbar .container-fluid .nav .dropdown a::after{
+    font-size: 20px !important;
+}
+header .navbar .container-fluid .nav .dropdown a.dropdown-toggle:hover span{
+    color: #F26426 !important;
+}
+/*End Style tp-preheader Style*/
+
+/*Start change color Eng lang Topheader Style*/
+
+.tp-preheader .container-fluid .row .dropdown-toggle,
+.tp-preheader .container-fluid .row .dropdown-toggle::after{
+    color: #fff !important;
+}
+.tp-preheader .container-fluid .row .dropdown-toggle:hover,
+.tp-preheader .container-fluid .row .dropdown-toggle::after:hover{
+    color: #fff !important;
+}
+/*End change color Eng lang Topheader Style*/

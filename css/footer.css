@@ -1,0 +1,11 @@
+/*Start Edit Footer Responsive Style*/
+@media (max-width: 992px){
+  #footer{
+        overflow-x: hidden !important;
+    }
+    #footer .container-fluid .row{
+        display: flex;
+        flex-direction: column-reverse !important;
+    }
+}
+/*End Edit Footer Responsive Style*/

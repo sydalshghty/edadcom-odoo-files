@@ -1,0 +1,70 @@
+/*Start About-us Style Responsive*/
+
+@media (max-width: 1500px){
+  .about-us-section2 span,
+  .our-vision-text p span font,
+  .our-mission-text p span font{
+    font-size: 17px !important;
+  }
+  .our-services h2,
+  .our-vision h2 span font,
+  .our-mission h2 span,
+  .our-core-values h5 span,
+  .closing-statment h1 span strong{
+    font-size: 40px !important;
+  }
+  .all-services .container .row .col-lg-4{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  .all-services .container .row .col-lg-4 img{
+    width: 120px;
+  }
+  .all-services .container .row .col-lg-4 h3 span strong{
+      font-size: 20px;
+  }
+}
+
+@media (max-width: 992px){
+  .about-us-section2 span,
+  .our-vision-text p span font,
+  .our-mission-text p span font{
+    font-size: 15px !important;
+  }
+  .our-services h2,
+  .our-vision h2 span font,
+  .our-mission h2 span,
+  .our-core-values h5 span,
+  .closing-statment h1 span strong{
+    font-size: 32px !important;
+  }
+  .all-services .container .row .col-lg-4 img{
+    width: 120px;
+  }
+  .all-services .container .row .col-lg-4 h3 span strong{
+      font-size: 17px;
+  }
+  
+  .col-quality span font strong,
+  .col-professionalism span font strong,
+  .col-reliability span font strong,
+  .col-innovation span font strong,
+  .col-services span font strong{
+      font-size: 15px !important;
+  }
+  .col-quality span font,
+  .col-professionalism span font,
+  .col-reliability span font,
+  .col-innovation span font,
+  .col-services span font{
+      font-size: 15px !important;
+  }
+  .closing-statment p span strong font,
+.closing-statment p span font strong{
+  font-size: 17px !important;
+}
+.closing-statment p span font{
+  font-size: 14px !important;
+}
+}
+/*End About-us Style Responsive*/

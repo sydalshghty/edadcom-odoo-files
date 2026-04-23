@@ -1,0 +1,41 @@
+/*Start Edit Style o_header_mobile*/
+@media (max-width: 992px){
+    .tp-preheader{
+        display: none !important;
+    }
+}
+.o_header_mobile #o_main_nav{
+    width: 100%;
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    align-items: center !important;
+}
+.o_header_mobile #o_main_nav .Logo{
+    position: absolute;
+    left: 0 !important;
+}
+.o_header_mobile #o_main_nav .tp-account-info{
+    position: absolute;
+    right: 20px !important;
+    padding-right: 40px;
+}
+.o_header_mobile #o_main_nav .tp-account-info .tp-cart-sidebar-action{
+  background-color: #F2F2F3 !important;
+  width: 24px !important;
+  height: 24px !important;
+  border-radius: 50% !important;
+}
+.o_header_mobile #o_main_nav .tp-account-info .tp-cart-sidebar-action .dri-cart{
+  color: #F26426 !important;
+}
+.o_header_mobile #o_main_nav .tp-menu-sidebar-action{
+    position: absolute;
+    right: 20px !important;
+    margin-top: -13px !important;
+    z-index: 999 !important;
+}
+.o_header_mobile #o_main_nav .tp-menu-sidebar-action svg{
+    color: #000000 !important;
+    font-size: 25px !important;
+}
+/*End Edit Style o_header_mobile*/

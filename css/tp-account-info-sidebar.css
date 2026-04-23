@@ -1,0 +1,48 @@
+/*Start Style Profile before,after login*/
+.tp-account-info-sidebar div:first-child{
+    height: 60px !important;
+}
+.tp-account-info-sidebar div:first-child div i{
+    background-color: #FEEEE7 !important;
+    font-size: 22px !important;
+    font-weight: 600;
+}
+.tp-account-info-sidebar div:first-child div h5{
+    font-size: 16px;
+    font-weight: 600;
+    color: #57595B;
+    font-weight: 600;
+}
+.tp-account-info-sidebar div:first-child button{
+    color: #8A8C8F !important;
+    font-size: 24px !important;
+    font-weight: bold !important;
+}
+.tp-account-info-sidebar div:first-child span{
+    display: none !important;
+}
+.tp-account-info-sidebar .tp-scrollable-y ul{
+    border-radius: 0px !important;
+}
+.tp-account-info-sidebar .tp-scrollable-y ul a{
+    border: none !important;
+    border-bottom: 1px solid #8A8C8F !important;
+}
+.tp-account-info-sidebar .tp-scrollable-y ul a:last-child{
+    border-bottom: none !important;
+}
+.tp-account-info-sidebar .tp-scrollable-y ul a{
+    height: 56px !important;
+    background-color: #fff !important;
+}
+.tp-account-info-sidebar .tp-scrollable-y ul a div svg,
+.tp-account-info-sidebar .tp-scrollable-y ul a div i{
+    font-size: 22px;
+    color: #57595B !important;
+}
+.tp-account-info-sidebar .tp-scrollable-y ul a div h6{
+    font-size: 14px;
+    font-weight: 600;
+    color: #57595B;
+}
+/*End Style Profile before,after login*/

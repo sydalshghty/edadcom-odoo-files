@@ -1,0 +1,32 @@
+/*Start Content-Search Style*/
+.dr_search_autocomplete .dropdown-item .o_search_result_item{
+    border-bottom: 1px solid #ddd !important;
+    border-radius: 0px !important;
+}
+.dr_search_autocomplete .dropdown-item .o_search_result_item:hover{
+    background-color: #f6f6f6 !important;
+}
+.dr_search_autocomplete .dropdown-item .o_search_result_item:hover .h6{
+    color: black !important;
+}
+.dr_search_autocomplete .dropdown-item .o_search_result_item div .h6{
+    font-size: 14px !important;
+}
+.dr_search_autocomplete .dropdown-item .o_search_result_item div p{
+    display: none;
+}
+.dr_search_autocomplete .dropdown-item .o_search_result_item div .btn-link{
+    display: none !important;
+}
+.dr_search_autocomplete .dropdown-item .o_search_result_item div b{
+    font-size: 14px !important;
+}
+@media (max-width: 450px){
+    .dr_search_autocomplete .dropdown-item .o_search_result_item div .h6{
+        font-size: 12px !important;
+    }
+    .dr_search_autocomplete .dropdown-item .o_search_result_item div b{
+      font-size: 12px !important;
+  }
+}
+/*End Content-Search Style*/
