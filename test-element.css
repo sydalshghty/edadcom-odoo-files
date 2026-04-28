@@ -1,100 +1,33 @@
-/*Start s_icon_block_5 Style*/
-.s_icon_block_5 .row{
-  margin-top: 10px !important;
-  margin-bottom: 10px !important;
+.s_icon_block_5 .mySwiper{
+ position: relative;
 }
-.s_icon_block_5 .row .col-12{
-  height: 120px !important;
-  padding: 16px !important;
-  background-color: #FEEEE7 !important;
-  border-radius: 12px !important;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between !important;
+.s_icon_block_5 .mySwiper .left-btn,
+.s_icon_block_5 .mySwiper .right-btn{
+  position: absolute;
+  top: 50%;
+  width: 40px !important;
+  height: 40px !important;
+  background-color: #F26122 !important;
+  border-radius: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
   align-items: center !important;
-  cursor: pointer;
+  z-index: 10;
 }
-.s_icon_block_5 .row .col-12 img{
-  width: 70px !important;
-  height: 50px !important;
-  object-fit: contain !important;
+.s_icon_block_5 .mySwiper .left-btn {
+  left: -50px;
 }
-.s_icon_block_5 .row .col-12 h6{
-  font-size: 12px !important;
-  font-weight: 600;
-  color: #0C0D0D;
+.s_icon_block_5 .mySwiper .right-btn {
+  right: -50px;
 }
-.s_icon_block_5{
-  overflow: hidden !important;
+.s_icon_block_5 .mySwiper .left-btn::after,
+.s_icon_block_5 .mySwiper .right-btn::after{
+  display: none !important;
 }
-.s_icon_block_5 .row{
-  flex-direction: row !important;
-  flex-wrap: nowrap !important;
+.s_icon_block_5 .mySwiper .left-btn.swiper-button-disabled,
+.s_icon_block_5 .mySwiper .right-btn.swiper-button-disabled{
+  display: none !important;
 }
-
-@media (max-width: 992px){
-  .s_icon_block_5  .row .col-12 img{
-    width: 70px !important;
-    min-height: 60px !important;
-  }
-  .s_icon_block_5  .row .col-12 h6{
-    font-size: 12px !important;
-  }
-}
-@media (max-width: 700px){
-  .s_icon_block_5  .row .col-12 img{
-    width: 50px !important;
-    min-height: 30px !important;
-    margin-bottom: 0px !important;
-  }
-  .s_icon_block_5  .row .col-12 h6{
-    font-size: 9px !important;
-  }
-}
-/*End s_icon_block_5 Style*/ 
-
-
-
-@media (max-width: 992px){
-  .s_icon_block_5  .row .col-12 img{
-    width: 70px !important;
-    min-height: 60px !important;
-  }
-  .s_icon_block_5  .row .col-12 h6{
-    font-size: 12px !important;
-  }
-}
-@media (max-width: 700px){
-  .s_icon_block_5  .row .col-12 img{
-    width: 50px !important;
-    min-height: 30px !important;
-    margin-bottom: 0px !important;
-  }
-  .s_icon_block_5  .row .col-12 h6{
-    font-size: 9px !important;
-  }
-}
-
-@media (max-width: 768px){
-  .s_icon_block_5  .row .col-12{
-    height: 80px !important;
-  }
-  .s_icon_block_5  .row .col-12 img{
-    width: 50px !important;
-    min-height: 30px !important;
-    margin-bottom: 0px !important;
-  }
-  .s_icon_block_5  .row .col-12 h6{
-    font-size: 12px !important;
-  }
-}
-
-@media (max-width: 450px){
-  .s_icon_block_5  .row .col-12{
-    height: 120px !important;
-  }
-  .s_icon_block_5  .row .col-12 h6{
-    font-size: 10px !important;
-    margin-top: -10px;
-  }
+.s_icon_block_5 .mySwiper .row{
+  padding-left: 200px !important;
 }

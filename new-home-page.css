@@ -247,6 +247,37 @@ header .navbar .container-fluid .nav .dropdown a.dropdown-toggle:hover span{
   flex-direction: row !important;
   flex-wrap: nowrap !important;
 }
+
+.s_icon_block_5 .mySwiper{
+ position: relative;
+}
+.s_icon_block_5 .mySwiper .left-btn,
+.s_icon_block_5 .mySwiper .right-btn{
+  position: absolute;
+  top: 50%;
+  width: 40px !important;
+  height: 40px !important;
+  background-color: #F26122 !important;
+  border-radius: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  z-index: 10;
+}
+.s_icon_block_5 .mySwiper .left-btn {
+  left: -50px;
+}
+.s_icon_block_5 .mySwiper .right-btn {
+  right: -50px;
+}
+.s_icon_block_5 .mySwiper .left-btn::after,
+.s_icon_block_5 .mySwiper .right-btn::after{
+  display: none !important;
+}
+
+.s_icon_block_5 .mySwiper .row{
+  padding-left: 40px !important;
+}
 /*End s_icon_block_5 Style*/
 
 /*Start Edit Footer Responsive Style*/
