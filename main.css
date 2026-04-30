@@ -1289,12 +1289,16 @@ header .navbar .container-fluid .nav .dropdown a.dropdown-toggle:hover span{
   }
 }
 
-@media (max-width: 520px){
-  .s_title .container h3 span strong{
-    font-size: 20px !important;
+@media (max-width: 600px){
+  .s_title .container h3{
+    font-size: 18px !important;
   }
   .s_title .container span{
     font-size: 12px !important;
+  }
+  .s_clients_4 .container .row .col-12{
+    width: 60px !important;
+    height: 50px !important;
   }
 }
 
