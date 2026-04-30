@@ -1,3 +1,6 @@
-.s_category_brands{
-  display: none !important;
+@media (max-width: 768px){
+  .s_icon_block_5 .mySwiper .left-btn,
+  .s_icon_block_5 .mySwiper .right-btn{
+    display: none !important;
+  }
 }

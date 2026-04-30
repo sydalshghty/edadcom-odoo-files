@@ -219,15 +219,16 @@ header .navbar .container-fluid .nav .dropdown a.dropdown-toggle:hover span{
 /*End s_carousel_wrapper Style*/
 
 /*Start s_icon_block_5 Style*/
-.s_icon_block_5 .row{
-  justify-content: center !important;
-  gap: 20px !important;
-  margin-top: 10px !important;
-  margin-bottom: 10px !important;
+.mySwiper.container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
-.s_icon_block_5 .row .col-12{
-  width: 130px !important;
-    height: 135px !important;
+.s_icon_block_5 .swiper-wrapper{
+   padding-left: 100px !important;
+ 
+}
+.s_icon_block_5 .swiper-wrapper .swiper-slide{
+  height: 120px !important;
   padding: 16px !important;
   background-color: #FEEEE7 !important;
   border-radius: 12px !important;
@@ -237,43 +238,43 @@ header .navbar .container-fluid .nav .dropdown a.dropdown-toggle:hover span{
   align-items: center !important;
   cursor: pointer;
 }
-.s_icon_block_5 .row .col-12 img{
+.s_icon_block_5 .swiper-wrapper .swiper-slide img{
   width: 70px !important;
-    min-height: 60px !important;
+  height: 50px !important;
   object-fit: contain !important;
 }
-.s_icon_block_5 .row .col-12 h6{
+.s_icon_block_5 .swiper-wrapper .swiper-slide h6{
   font-size: 12px !important;
   font-weight: 600;
   color: #0C0D0D;
 }
-@media (max-width: 992px){
-  .s_icon_block_5  .row .col-12{
-    width: 130px !important;
-    height: 135px !important;
-  }
-  .s_icon_block_5  .row .col-12 img{
-    width: 70px !important;
-    min-height: 60px !important;
-  }
-  .s_icon_block_5  .row .col-12 h6{
-    font-size: 12px !important;
-  }
+.s_icon_block_5{
+   overflow: hidden !important;
 }
-@media (max-width: 700px){
-  .s_icon_block_5  .row .col-12{
-    width: 90px !important;
-    height: 90px !important;
-  }
-  .s_icon_block_5  .row .col-12 img{
-    width: 50px !important;
-    min-height: 30px !important;
-    margin-bottom: 0px !important;
-  }
-  .s_icon_block_5  .row .col-12 h6{
-    font-size: 9px !important;
-  }
-    .s_icon_block_5  .row .col-12:nth-child(7){
+.s_icon_block_5 .mySwiper{
+ position: relative;
+ 
+}
+.s_icon_block_5 .mySwiper .left-btn,
+.s_icon_block_5 .mySwiper .right-btn{
+  position: absolute;
+  top: 50%;
+  width: 40px !important;
+  height: 40px !important;
+  background-color: #F26122 !important;
+  border-radius: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  z-index: 10;
+}
+.s_icon_block_5 .mySwiper .left-btn::after,
+.s_icon_block_5 .mySwiper .right-btn::after{
+  display: none !important;
+}
+@media (max-width: 768px){
+  .s_icon_block_5 .mySwiper .left-btn,
+  .s_icon_block_5 .mySwiper .right-btn{
     display: none !important;
   }
 }
@@ -365,7 +366,7 @@ header .navbar .container-fluid .nav .dropdown a.dropdown-toggle:hover span{
 /*End tp-droggol-builder-snippet Style*/
 
 /*Start Style Shop by Brands*/
-//all-brands-section
+
 .s_category_brands{
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
   margin-top: 20px !important;
@@ -1243,3 +1244,63 @@ header .navbar .container-fluid .nav .dropdown a.dropdown-toggle:hover span{
     color: #57595B;
 }
 /*End Style Profile before,after login*/
+
+/*Start Style Shop By Brand*/
+.s_title .container h3{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.s_clients_4 .container .row{
+  display: flex;
+  gap: 20px !important;
+}
+.s_clients_4 .container .row .col-12{
+  padding: 0px !important;
+  width: 116px !important;
+  height: 100px !important;
+  cursor: pointer;
+  transition: margin 0.5s ease !important;
+}
+.s_clients_4 .container .row .col-12:hover{
+  margin-top: -10px !important;
+}
+@media (max-width: 992px){
+   .s_clients_4 .container .row{
+    flex-direction: row;
+    flex-wrap: wrap !important;
+  }
+  .s_title .container h3{
+    padding: 15px 0px 0px 0px !important;
+  }
+  .s_clients_4 .container .row{
+    justify-content: center !important;
+  }
+  .s_clients_4 .container .row .col-12{
+    width: 90px !important;
+    height: 80px !important;
+  }
+  .s_title .container h3 span strong{
+    font-size: 25px !important;
+  }
+  .s_title .container span{
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 520px){
+  .s_title .container h3 span strong{
+    font-size: 20px !important;
+  }
+  .s_title .container span{
+    font-size: 12px !important;
+  }
+}
+
+/*End Style Shop By Brand*/
+
+.s_category_brands{
+  display: none !important;
+}
+
