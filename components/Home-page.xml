@@ -1,7 +1,8 @@
 <t t-name="website.home-page-test">
     <t t-call="website.layout">
         <div id="wrap" class="oe_structure oe_empty"><section class="s_cover_2 s_carousel_wrapper" data-snippet="s_cover_2" data-name="Cover - 2" id="Cover---2" data-anchor="true">
-            <div class="s_carousel tp-custom-carousel carousel s_carousel_default slide" data-bs-interval="10000" id="myCarousel1769415957131" style="background-image: none;">    
+            <div class="s_carousel tp-custom-carousel carousel s_carousel_default slide" data-bs-interval="10000" id="myCarousel1769415957131" style="background-image: none;">
+                
                 <ol class="carousel-indicators o_we_no_overlay">
                     <li data-bs-target="#myCarousel1769415957131" class="active" data-bs-slide-to="0" aria-current="true"/>
                     <li data-bs-target="#myCarousel1769415957131" data-bs-slide-to="1"/>
@@ -42,78 +43,165 @@
         </section><section class="s_icon_block_5 pt16 o_colored_level pb16" data-snippet="s_icon_block_5" data-name="Icon Block - 5" style="background-image: none;">
             <div class="mySwiper swiper-initialized swiper-horizontal container">
                 <div class="left-btn swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-62e39e2e05ea2536" aria-disabled="true"><span class="fa fa-chevron-left text-o-color-4"/><br/></div><div class="right-btn swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-62e39e2e05ea2536" aria-disabled="false"><img src="/web/image/218397-f6807c66/chevron-right%20%287%29.svg" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="218397" data-original-src="/web/image/218397-f6807c66/chevron-right%20%287%29.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/><br/></div>
-                <div class="row swiper-wrapper" id="swiper-wrapper-62e39e2e05ea2536" aria-live="polite" style="transition-duration: 300ms; transform: translate3d(-959px, 0px, 0px); cursor: grab;">     
-                    <div class="col-12 py-3 text-center o_colored_level col-lg-2 swiper-slide swiper-slide-active" style="width: 131.625px; margin-right: 10px;" role="group" aria-label="1 / 15">
+                <div class="swiper-wrapper" id="swiper-wrapper-62e39e2e05ea2536" aria-live="polite" style="transition-duration: 0ms; transform: translate3d(-1121.75px, 0px, 0px); transition-delay: 0ms; cursor: grab;">
+                    
+                    <div class=" py-3 text-center o_colored_level  swiper-slide swiper-slide-active" style="width: 142.375px; margin-right: 10px;" role="group" aria-label="1 / 15">
                         <a href="/shop/category/power-tools-10" data-bs-original-title="" title=""><img src="/web/image/169025-3a4f89bd/13235469_1902.sm002.004.TS.m000.c5.construction%20building%20repair%201.webp" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/webp" data-original-id="169012" data-original-src="/web/image/169012-36cadd6c/13235469_1902.sm002.004.TS.m000.c5.construction%20building%20repair%201.png" data-mimetype-before-conversion="image/png" data-resize-width="200" loading="lazy"/></a>
-                        <h6 class="mt-3">Power Tools</h6>
-                    </div><div class="col-12 py-3 text-center o_colored_level col-lg-2 swiper-slide swiper-slide-next" style="width: 131.625px; margin-right: 10px;" role="group" aria-label="2 / 15">
+                        <h6 class="mt-3">
+Power Tools
+
+</h6>
+                    </div><div class="col-12 py-3 text-center o_colored_level col-lg-2 swiper-slide swiper-slide-next" style="width: 142.375px; margin-right: 10px;" role="group" aria-label="2 / 15">
                         <a href="/shop/category/power-tool-accessories-14"><img src="/web/image/170457-6d0c2732/ARTBOARD%202%20%282%29.webp" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/webp" data-original-id="170446" data-original-src="/web/image/170446-c81c802b/ARTBOARD%202%20%282%29.png" data-mimetype-before-conversion="image/png" data-resize-width="150" loading="lazy"/></a>
-                        <h6 class="mt-3">Safety &amp;amp; Protective Tools</h6>
-                    </div><div class="col-12 py-3 text-center o_colored_level col-lg-2 pb0 swiper-slide" style="width: 131.625px; margin-right: 10px;" role="group" aria-label="3 / 15">
-                        <a href="/shop/category/hand-tools-6"><img src="/web/image/170484-479ae68a/OBJECTS%20%285%29.webp" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/webp" data-original-id="170483" data-original-src="/web/image/170483-52ef35de/OBJECTS%20%285%29.png" data-mimetype-before-conversion="image/png" data-resize-width="150" loading="lazy"/></a><h6 class="mt-3">Hand Tools</h6>
-                    </div><div class="col-12 py-3 text-center o_colored_level col-lg-2 swiper-slide" style="width: 131.625px; margin-right: 10px;" role="group" aria-label="4 / 15">
+                        <h6 class="mt-3">
+Safety &amp;amp; Protective Tools
+
+</h6>
+                    </div><div class=" py-3 text-center o_colored_level  pb0 swiper-slide" style="width: 142.375px; margin-right: 10px;" role="group" aria-label="3 / 15">
+                        <a href="/shop/category/hand-tools-6"><img src="/web/image/170484-479ae68a/OBJECTS%20%285%29.webp" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/webp" data-original-id="170483" data-original-src="/web/image/170483-52ef35de/OBJECTS%20%285%29.png" data-mimetype-before-conversion="image/png" data-resize-width="150" loading="lazy"/></a><h6 class="mt-3">
+Hand Tools
+
+</h6>
+                    </div><div class=" py-3 text-center o_colored_level  swiper-slide" style="width: 142.375px; margin-right: 10px;" role="group" aria-label="4 / 15">
                         <a href="/shop/category/hand-tools-measuring-tools-103"><img src="/web/image/170459-ddb05a9b/Adobe%20Express%20-%20file%20%2810%29%201%20%282%29.webp" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/webp" data-original-id="170450" data-original-src="/web/image/170450-ada200c1/Adobe%20Express%20-%20file%20%2810%29%201%20%282%29.png" data-mimetype-before-conversion="image/png" data-resize-width="200" loading="lazy"/></a>
-                        <h6 class="mt-3">Measuring Tools</h6>
-                    </div><div class="col-12 py-3 text-center o_colored_level col-lg-2 swiper-slide" style="width: 131.625px; margin-right: 10px;" role="group" aria-label="5 / 15">
+                        <h6 class="mt-3">
+Measuring Tools
+
+</h6>
+                    </div><div class=" py-3 text-center o_colored_level  swiper-slide" style="width: 142.375px; margin-right: 10px;" role="group" aria-label="5 / 15">
                         <a href="/shop/category/hand-tools-bags-electricians-tool-bags-135" data-bs-original-title="" title=""><img src="/web/image/170460-5058e1ee/2869893_6267%201%20%281%29.webp" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/webp" data-original-id="170451" data-original-src="/web/image/170451-8b8c82ea/2869893_6267%201%20%281%29.png" data-mimetype-before-conversion="image/png" data-resize-width="151" loading="lazy"/></a>
-                        <h6 class="mt-3">Workshop Equipment</h6>
-                    </div><div class="col-12 py-3 text-center o_colored_level col-lg-2 swiper-slide" style="width: 131.625px; margin-right: 10px;" role="group" aria-label="6 / 15">
+                        <h6 class="mt-3">
+Workshop Equipment
+
+</h6>
+                    </div><div class=" py-3 text-center o_colored_level  swiper-slide" style="width: 142.375px; margin-right: 10px;" role="group" aria-label="6 / 15">
                         <a href="/shop/category/power-tools-cleaning-tools-67"><img src="/web/image/169027-9ed84c6c/33906193_indomay48%201.webp" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/webp" data-original-id="169020" data-original-src="/web/image/169020-ed7dced1/33906193_indomay48%201.png" data-mimetype-before-conversion="image/png" data-resize-width="199" loading="lazy"/></a>
-                        <h6 class="mt-3">Garden &amp;nbsp;Tools</h6>
-                    </div><div class="col-12 py-3 text-center o_colored_level col-lg-2 swiper-slide" style="width: 131.625px; margin-right: 10px;" role="group" aria-label="7 / 15">
+                        <h6 class="mt-3">
+Garden &amp;nbsp;Tools
+
+</h6>
+                    </div><div class=" py-3 text-center o_colored_level  swiper-slide" style="width: 142.375px; margin-right: 10px;" role="group" aria-label="7 / 15">
                         <a href="/shop/category/hand-tools-tape-measures-7"><img src="/web/image/170462-518bdba7/OBJECTS%20%284%29.webp" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/webp" data-original-id="170453" data-original-src="/web/image/170453-b837fe86/OBJECTS%20%284%29.png" data-mimetype-before-conversion="image/png" data-resize-width="150" loading="lazy"/></a>
-                        <h6 class="mt-3">Construction &amp;amp; Building Tools</h6>
-                    </div><div class="col-12 py-3 text-center o_colored_level col-lg-2 swiper-slide" style="width: 131.625px; margin-right: 10px;" role="group" aria-label="8 / 15">
+                        <h6 class="mt-3">
+Construction &amp;amp; Building Tools
+
+</h6>
+                    </div><div class=" py-3 text-center o_colored_level  swiper-slide" style="width: 142.375px; margin-right: 10px;" role="group" aria-label="8 / 15">
                         <a href="/shop"><img src="/web/image/170460-5058e1ee/2869893_6267%201%20%281%29.webp" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/webp" data-original-id="170451" data-original-src="/web/image/170451-8b8c82ea/2869893_6267%201%20%281%29.png" data-mimetype-before-conversion="image/png" data-resize-width="151" loading="lazy"/></a>
-                        <h6 class="mt-3">Workshop Equipment</h6>
-                    </div><div class="col-12 py-3 text-center o_colored_level col-lg-2 swiper-slide" style="width: 131.625px; margin-right: 10px;" role="group" aria-label="9 / 15">
+                        <h6 class="mt-3">
+Workshop Equipment
+
+</h6>
+                    </div><div class=" py-3 text-center o_colored_level  swiper-slide" style="width: 142.375px; margin-right: 10px;" role="group" aria-label="9 / 15">
                         <a href="/shop/category/power-tools-10" data-bs-original-title="" title=""><img src="/web/image/170456-846807aa/13235469_1902.sm002.004.TS.m000.c5.construction%20building%20repair%201%20%281%29.webp" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/webp" data-original-id="170442" data-original-src="/web/image/170442-e87e3d0c/13235469_1902.sm002.004.TS.m000.c5.construction%20building%20repair%201%20%281%29.png" data-mimetype-before-conversion="image/png" data-resize-width="150" loading="lazy"/></a>
                         <h6 class="mt-3">Power Tools</h6><h6 class="mt-3"><br/></h6>
-                    </div><div class="col-12 py-3 text-center o_colored_level col-lg-2 swiper-slide" style="width: 131.625px; margin-right: 10px;" role="group" aria-label="10 / 15">
+                    </div><div class=" py-3 text-center o_colored_level  swiper-slide" style="width: 142.375px; margin-right: 10px;" role="group" aria-label="10 / 15">
                         <a href="/shop/category/hand-tools-6" data-bs-original-title="" title=""><img src="/web/image/170455-479ae68a/OBJECTS%20%282%29.webp" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/webp" data-original-id="170443" data-original-src="/web/image/170443-52ef35de/OBJECTS%20%282%29.png" data-mimetype-before-conversion="image/png" data-resize-width="150" loading="lazy"/></a>
                         <h6 class="mt-3">Hand Tools</h6><h6 class="mt-3"><br/></h6>
-                    </div><div class="col-12 py-3 text-center o_colored_level col-lg-2 swiper-slide" style="width: 131.625px; margin-right: 10px;" role="group" aria-label="11 / 15">
+                    </div><div class=" py-3 text-center o_colored_level  swiper-slide" style="width: 142.375px; margin-right: 10px;" role="group" aria-label="11 / 15">
                         <a href="/shop"><img src="/web/image/170460-5058e1ee/2869893_6267%201%20%281%29.webp" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/webp" data-original-id="170451" data-original-src="/web/image/170451-8b8c82ea/2869893_6267%201%20%281%29.png" data-mimetype-before-conversion="image/png" data-resize-width="151" loading="lazy"/></a>
                         <h6 class="mt-3">Workshop Equipment</h6><h6 class="mt-3"><br/></h6>
-                    </div><div class="col-12 py-3 text-center o_colored_level col-lg-2 swiper-slide" style="width: 131.625px; margin-right: 10px;" role="group" aria-label="12 / 15">
+                    </div><div class=" py-3 text-center o_colored_level  swiper-slide" style="width: 142.375px; margin-right: 10px;" role="group" aria-label="12 / 15">
                         <a href="/shop"><img src="/web/image/170461-30463fad/33906193_indomay48%201%20%281%29.webp" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/webp" data-original-id="170452" data-original-src="/web/image/170452-91ca9f4d/33906193_indomay48%201%20%281%29.png" data-mimetype-before-conversion="image/png" data-resize-width="150" loading="lazy"/></a>
-                        <h6 class="mt-3">Garden &amp;nbsp;Tools</h6>
-                    </div><div class="col-12 py-3 text-center o_colored_level col-lg-2 swiper-slide" style="width: 131.625px; margin-right: 10px;" role="group" aria-label="13 / 15">
+                        <h6 class="mt-3">
+Garden &amp;nbsp;Tools
+
+</h6>
+                    </div><div class=" py-3 text-center o_colored_level  swiper-slide" style="width: 142.375px; margin-right: 10px;" role="group" aria-label="13 / 15">
                         <a href="/shop/category/hand-tools-measuring-tools-103"><img src="/web/image/169028-dbeca25e/OBJECTS%20%281%29.webp" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/webp" data-original-id="169019" data-original-src="/web/image/169019-20c7ca7e/OBJECTS%20%281%29.png" data-mimetype-before-conversion="image/png" data-resize-width="200" loading="lazy"/></a>
-                        <h6 class="mt-3">Construction &amp;amp; Building Tools&amp;nbsp;<br/></h6>
-                    </div><div class="col-12 py-3 text-center o_colored_level col-lg-2 swiper-slide" style="width: 131.625px; margin-right: 10px;" role="group" aria-label="14 / 15">
+                        <h6 class="mt-3">
+Construction &amp;amp; Building Tools&amp;nbsp;<br/></h6>
+                    </div><div class=" py-3 text-center o_colored_level  swiper-slide" style="width: 142.375px; margin-right: 10px;" role="group" aria-label="14 / 15">
                         <a href="/shop/category/hand-tools-tape-measures-7"><img src="/web/image/169024-e9900f7a/Adobe%20Express%20-%20file%20%2810%29%201.webp" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/webp" data-original-id="169017" data-original-src="/web/image/169017-0fdd4d37/Adobe%20Express%20-%20file%20%2810%29%201.png" data-mimetype-before-conversion="image/png" data-resize-width="250" loading="lazy"/></a>
                         <h6 class="mt-3">&amp;nbsp;Measuring Tools</h6>
-                    </div><div class="col-12 py-3 text-center o_colored_level col-lg-2 swiper-slide" role="group" aria-label="15 / 15" style="width: 131.625px; margin-right: 10px;">
+                    </div><div class=" py-3 text-center o_colored_level  swiper-slide" role="group" aria-label="15 / 15" style="width: 142.375px; margin-right: 10px;">
                         <a href="/shop/category/power-tools-10"><img src="/web/image/170456-846807aa/13235469_1902.sm002.004.TS.m000.c5.construction%20building%20repair%201%20%281%29.webp" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/webp" data-original-id="170442" data-original-src="/web/image/170442-e87e3d0c/13235469_1902.sm002.004.TS.m000.c5.construction%20building%20repair%201%20%281%29.png" data-mimetype-before-conversion="image/png" data-resize-width="150" loading="lazy"/></a>
-                        <h6 class="mt-3">Power Tools&amp;nbsp;<br/></h6>
+                        <h6 class="mt-3">
+Power Tools&amp;nbsp;<br/></h6>
                     </div>
+                    
+                    
                 </div>
                 <div class="right-btn swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-62e39e2e05ea2536" aria-disabled="false"><span class="fa fa-chevron-right text-o-color-4"/><br/></div>
             <span class="swiper-notification" aria-live="assertive" aria-atomic="true"/></div>
-        </section><section class="s_heading_6 pb16 o_colored_level pt24 bg-200" data-snippet="s_heading_6" data-name="Heading - 6" style="background-image: none;">
+        </section><section class="s_heading_6 pb16 o_colored_level bg-200 pt0" data-snippet="s_heading_6" data-name="Heading - 6" style="background-image: none;">
             <div class="container">
                 <div class="row s_col_no_bgcolor s_nb_column_fixed">
                     <div class="col-12 col-lg-12">
-                        <p><br/></p><h2 class="tp-underline-title pb-3">Top selling<br/></h2>
+                        <p><br/></p><h2 class="tp-underline-title pb-3">
+Top selling
+
+<br/></h2>
                     </div>
                 </div>
             </div>
         </section><section class="tp-droggol-builder-snippet products-departamenet dr_not_editable s_d_products_snippet_wrapper text-center o_colored_level pt0 pb16 tp-snippet-shiftless-enable bg-200" data-tp-snippet-id="s_d_products_snippet" data-selection-info="{&quot;selectionType&quot;:&quot;manual&quot;,&quot;recordsIDs&quot;:[24228,24691,29292,20001,22954,30177,19546,21941,28711,19590,22080,19647],&quot;domain_params&quot;:{&quot;domain&quot;:[&quot;|&quot;,[&quot;list_price&quot;,&quot;=&quot;,200],[&quot;name&quot;,&quot;ilike&quot;,&quot;&quot;]],&quot;limit&quot;:5,&quot;order&quot;:&quot;name asc&quot;,&quot;isReadOnly&quot;:false}}" data-ui-config-info="{&quot;style&quot;:&quot;s_card_style_3&quot;,&quot;mode&quot;:&quot;grid&quot;,&quot;ppr&quot;:6,&quot;activeActions&quot;:[&quot;rating&quot;,&quot;quick_view&quot;,&quot;add_to_cart&quot;,&quot;comparison&quot;,&quot;wishlist&quot;,&quot;category_info&quot;,&quot;label&quot;],&quot;mobileConfig&quot;:{&quot;style&quot;:&quot;s_mobile_card_style_1&quot;,&quot;mode&quot;:&quot;grid&quot;}}" data-name="Dynamic Snippet" style="background-image: none;"><div class="s_d_products_snippet o_not_editable container"/></section><section class="s_category_brands all-brands-section mt-n5 o_colored_level pt0 pb0 d-none o_snippet_mobile_invisible d-lg-block" data-snippet="s_category_brands" data-name="Categories &amp; Brands" style="background-image: none;" data-invisible="1">
             <div class="container">
                 <div class="row">
+                    
                     <div class="o_colored_level col-lg-12 pt0">
                         <div data-tp-res-model="product.attribute.value" class="s_brands_small mb-3 tp-droggol-builder-snippet bg-white border tp-rounded-border shadow-sm dr_not_editable tp-snippet-shiftless-enable" data-tp-snippet-id="s_brands_small" data-selection-info="{&quot;selectionType&quot;:&quot;manual&quot;,&quot;recordsIDs&quot;:[20,35,197,250,333,373,631,650]}"/>
                     </div>
                 </div>
             </div>
+        </section><section class="s_title o_colored_level pt32 pb0" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+        <div class="container s_allow_columns">
+            <h3 style="text-align: center;"><strong>Shopping By Brand</strong><strong>&amp;nbsp;</strong> <span style="font-size: 1.5rem;"><a href="/shop/all-brands" target="_blank">See all Brands</a></span>
+
+</h3>
+        </div>
+    </section><section class="s_clients_4 o_colored_level pt0 pb40" data-snippet="s_clients_4" data-name="Clients - 4" style="background-image: none;">
+            <div class="container">
+                <div class="row s_col_no_bgcolor s_nb_column_fixed">
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-2 py-3 col-lg-1 pb0">
+                        <div class="tp-client-box tp-editor-bg-color-n-shadow py-3 text-center o_colored_level">
+                            <a href="https://www.edadcom.com/shop?attrib=1-20"><img src="/web/image/221572-8f79836f/Frame%201261154396.svg" alt="" class="img img-fluid o_we_custom_image tp-height-width-enable" data-mimetype="image/svg+xml" data-original-id="221572" data-original-src="/web/image/221572-8f79836f/Frame%201261154396.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/></a><br/><br/></div>
+                    </div><div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 py-3">
+                        <div class="tp-client-box tp-editor-bg-color-n-shadow py-3 text-center o_colored_level">
+                            <a href="https://www.edadcom.com/shop?attrib=1-35" target="_blank"><img src="/web/image/221577-bf2566e3/Frame%201261154397.svg" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="221577" data-original-src="/web/image/221577-bf2566e3/Frame%201261154397.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/></a>
+                            <h6 class="mt-2 mb-0"><br/></h6>
+                        </div>
+                    </div><div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 py-3">
+                        <div class="tp-client-box tp-editor-bg-color-n-shadow py-3 text-center o_colored_level">
+                            <a href="https://www.edadcom.com/shop?attrib=1-197" target="_blank"><img src="/web/image/221578-f2efbd75/Frame%201261154398.svg" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="221578" data-original-src="/web/image/221578-f2efbd75/Frame%201261154398.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/></a><br/><br/></div>
+                    </div><div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 py-3">
+                        <div class="tp-client-box tp-editor-bg-color-n-shadow py-3 text-center o_colored_level">
+                            <a href="https://www.edadcom.com/shop?attrib=1-250" target="_blank"><img src="/web/image/221580-31721089/Frame%201261154399.svg" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="221580" data-original-src="/web/image/221580-31721089/Frame%201261154399.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/></a>
+                            <h6 class="mt-2 mb-0"><br/></h6>
+                        </div>
+                    </div><div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 py-3">
+                        <div class="tp-client-box tp-editor-bg-color-n-shadow py-3 text-center o_colored_level">
+                            <a href="https://www.edadcom.com/shop?attrib=1-333" target="_blank"><img src="/web/image/221581-04d0f3e1/Frame%201261154400.svg" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="221581" data-original-src="/web/image/221581-04d0f3e1/Frame%201261154400.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/></a>
+                            <h6 class="mt-2 mb-0"><br/></h6>
+                        </div>
+                    </div><div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 py-3">
+                        <div class="tp-client-box tp-editor-bg-color-n-shadow py-3 text-center o_colored_level">
+                            <a href="https://www.edadcom.com/shop?attrib=1-373" target="_blank"><img src="/web/image/221582-22680649/Frame%201261154401.svg" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="221582" data-original-src="/web/image/221582-22680649/Frame%201261154401.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/></a>
+                            <h6 class="mt-2 mb-0"><br/></h6>
+                        </div>
+                    </div><div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 py-3">
+                        <div class="tp-client-box tp-editor-bg-color-n-shadow py-3 text-center o_colored_level">
+                            <img src="/web/image/221583-746342d9/Frame%201261154402.svg" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="221583" data-original-src="/web/image/221583-746342d9/Frame%201261154402.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/>
+                            <h6 class="mt-2 mb-0"><br/></h6>
+                        </div>
+                    </div><div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 py-3">
+                        <div class="tp-client-box tp-editor-bg-color-n-shadow py-3 text-center o_colored_level">
+                            <a href="https://www.edadcom.com/shop?attrib=1-631" target="_blank"><img src="/web/image/221584-d600c676/Frame%201261154403.svg" alt="" class="img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="221584" data-original-src="/web/image/221584-d600c676/Frame%201261154403.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/></a>
+                            <h6 class="mt-2 mb-0"><br/></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section><section class="s_cover_2 s_carousel_wrapper" data-snippet="s_cover_2" data-name="Cover - 2">
-            <div class="s_carousel tp-custom-carousel carousel s_carousel_default slide" data-bs-interval="2000" id="myCarousel1769497438012" style="background-image: none;"> 
+            <div class="s_carousel tp-custom-carousel carousel s_carousel_default slide" data-bs-interval="2000" id="myCarousel1769497438012" style="background-image: none;">
+                
                 <ol class="carousel-indicators o_we_no_overlay">
                     <li data-bs-target="#myCarousel1769497438012" class="active" data-bs-slide-to="0" aria-current="true"/>
                     <li data-bs-target="#myCarousel1769497438012" data-bs-slide-to="1"/>
                 <li data-bs-target="#myCarousel1769497438012" data-bs-slide-to="2"/> <li data-bs-target="#myCarousel1769497438012" data-bs-slide-to="3"/> </ol>
-                <div class="carousel-inner"> 
+                
+                <div class="carousel-inner">
+                    
                     <div class="carousel-item pb192 o_colored_level pt256 oe_img_bg o_bg_img_center o_bg_img_origin_border_box active" style="background-image: url(&quot;/web/image/170535-83823af3/Property%201%3Dimage%2089%20%281%29.svg&quot;);" data-name="Slide">
                         <div class="o_container_small">
                             
@@ -133,7 +221,8 @@
                             
                         </div>
                     </div>
-                </div>     
+                </div>
+                
                 <a class="carousel-control-prev o_not_editable o_we_no_overlay" role="img" aria-label="Previous" title="Previous" href="#myCarousel1769497438012" data-bs-slide="prev">
                     <span class="fa fa-chevron-left tp-icon-center-2 dr-p-icon border-0 shadow rounded-circle"/>
                     <span class="visually-hidden o_default_snippet_text">Previous</span>
@@ -147,17 +236,24 @@
             <div class="container">
                 <div class="row s_col_no_bgcolor s_nb_column_fixed">
                     <div class="col-12">
-                        <h2 class="tp-underline-title pb-3">Edadcom Offers’s&amp;nbsp;<br/></h2>
+                        <h2 class="tp-underline-title pb-3">
+
+Edadcom Offers’s
+
+&amp;nbsp;<br/></h2>
                     </div>
                 </div>
             </div>
         </section><section class="tp-droggol-builder-snippet dr_not_editable s_d_products_snippet_wrapper text-center o_colored_level pt0 pb0 edadcom-offers-products" data-tp-snippet-id="s_d_products_snippet" data-snippet="s_d_products_snippet" data-name="Dynamic Snippet" style="background-image: none;" data-selection-info="{&quot;selectionType&quot;:&quot;manual&quot;,&quot;recordsIDs&quot;:[21920,32034,24982,30592,24126,24228,19546]}" data-ui-config-info="{&quot;style&quot;:&quot;s_card_style_3&quot;,&quot;mode&quot;:&quot;slider&quot;,&quot;ppr&quot;:6,&quot;activeActions&quot;:[&quot;rating&quot;,&quot;quick_view&quot;,&quot;add_to_cart&quot;,&quot;comparison&quot;,&quot;wishlist&quot;],&quot;mobileConfig&quot;:{&quot;style&quot;:&quot;s_mobile_card_style_1&quot;,&quot;mode&quot;:&quot;default&quot;}}">
             <div class="s_d_products_snippet o_not_editable edadcom-offers-products container"/>
-        </section><section class="s_heading_6 pb16 o_colored_level pt16 bg-200" data-snippet="s_heading_6" data-name="Heading - 6">
+        </section><section class="s_heading_6 pb16 o_colored_level pt16 bg-200" data-snippet="s_heading_6" data-name="Heading - 6" style="background-image: none;">
             <div class="container">
                 <div class="row s_col_no_bgcolor s_nb_column_fixed">
                     <div class="col-12">
-                        <h2 class="tp-underline-title pb-3">New arrival</h2>
+                        <h2 class="tp-underline-title pb-3">
+New arrival
+
+</h2>
                     </div>
                 </div>
             </div>
@@ -165,11 +261,14 @@
             <div class="s_d_products_snippet o_not_editable container"/>
         </section><section class="s_cover_2 s_carousel_wrapper" data-snippet="s_cover_2" data-name="Cover - 2">
             <div class="s_carousel tp-custom-carousel carousel s_carousel_default slide" data-bs-interval="2000" id="myCarousel1769497768021" style="background-image: none;">
+                
                 <ol class="carousel-indicators o_we_no_overlay">
                     <li data-bs-target="#myCarousel1769497768021" class="active" data-bs-slide-to="0" aria-current="true"/>
                     <li data-bs-target="#myCarousel1769497768021" data-bs-slide-to="1"/>
                 <li data-bs-target="#myCarousel1769497768021" data-bs-slide-to="2"/> <li data-bs-target="#myCarousel1769497768021" data-bs-slide-to="3"/> </ol>
-                <div class="carousel-inner"> 
+                
+                <div class="carousel-inner">
+                    
                     <div class="carousel-item o_colored_level oe_img_bg o_bg_img_center o_bg_img_origin_border_box pb0 pt0 active" style="background-image: url(&quot;/web/image/170535-83823af3/Property%201%3Dimage%2089%20%281%29.svg&quot;);" data-name="Slide">
                         <div class="o_container_small">
                             
@@ -200,11 +299,14 @@
                     <span class="visually-hidden o_default_snippet_text">Next</span>
                 </a>
             </div>
-        </section><section class="s_heading_6 pb16 o_colored_level pt32 bg-200" data-snippet="s_heading_6" data-name="Heading - 6">
+        </section><section class="s_heading_6 pb16 o_colored_level pt32 bg-200" data-snippet="s_heading_6" data-name="Heading - 6" style="background-image: none;">
             <div class="container">
                 <div class="row s_col_no_bgcolor s_nb_column_fixed">
                     <div class="col-12 pt0">
-                        <h2 class="tp-underline-title pb-3">Most popular picks</h2>
+                        <h2 class="tp-underline-title pb-3">
+Most popular picks
+
+</h2>
                     </div>
                 </div>
             </div>
@@ -214,7 +316,10 @@
             <div class="container">
                 <div class="row s_col_no_bgcolor s_nb_column_fixed">
                     <div class="col-12">
-                        <h2 class="tp-underline-title pb-3" style="text-align: justify;">Recommended for you</h2>
+                        <h2 class="tp-underline-title pb-3" style="text-align: justify;">
+Recommended for you
+
+</h2>
                     </div>
                 </div>
             </div>
@@ -229,8 +334,14 @@
                                 <img src="/web/image/167482-0907aaf8/rocket-02%20%285%29.svg" alt="" class="me-4 img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="167482" data-original-src="/web/image/167482-0907aaf8/rocket-02%20%285%29.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/>
                             </div>
                             <div class="flex-grow-1">
-                                <h5>Fast and free delivery</h5>
-                                <p>Free delivery over 100 SAR</p></div>
+                                <h5>
+Fast and free delivery
+
+</h5>
+                                <p>
+Free delivery over 100 SAR
+
+</p></div>
                         </div>
                     </div>
                     <div class="col-12 py-3 o_colored_level col-lg-3 pt24">
@@ -239,8 +350,14 @@
                                 <img src="/web/image/167485-3c502f5c/refresh-ccw-01%20%282%29.svg" alt="" class="me-4 img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="167485" data-original-src="/web/image/167485-3c502f5c/refresh-ccw-01%20%282%29.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/>
                             </div>
                             <div class="flex-grow-1">
-                                <h5>Money back guarantee</h5>
-                                <p>We return money within 30 days&amp;nbsp;<br/></p></div>
+                                <h5>
+Money back guarantee
+
+</h5>
+                                <p>
+We return money within 30 days
+
+&amp;nbsp;<br/></p></div>
                         </div>
                     </div>
                     <div class="col-12 py-3 o_colored_level col-lg-3 pt24">
@@ -249,10 +366,20 @@
                                 <img src="/web/image/167487-bac5ada5/credit-card-02%20%282%29.svg" alt="" class="me-4 img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="167487" data-original-src="/web/image/167487-bac5ada5/credit-card-02%20%282%29.svg" data-mimetype-before-conversion="image/svg+xml" loading="lazy"/>
                             </div>
                             <div class="flex-grow-1">
-                                <h5>Secure online payment&amp;nbsp;<br/></h5>
-                                <p>We process SSL сertificate&amp;nbsp;<br/></p></div>
+                                <h5>
+
+Secure online payment
+
+&amp;nbsp;<br/></h5>
+                                <p>
+We process SSL сertificate
+
+&amp;nbsp;<br/></p></div>
                         </div>
-                    </div>    
+                    </div>
+                    
+                    
+                    
                 </div>
             </div>
         </section></div>

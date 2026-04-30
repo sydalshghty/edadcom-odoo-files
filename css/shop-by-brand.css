@@ -1,0 +1,57 @@
+/*Start Style Shop By Brand*/
+.s_title .container h3{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.s_clients_4 .container .row{
+  display: flex;
+  gap: 20px !important;
+}
+.s_clients_4 .container .row .col-12{
+  padding: 0px !important;
+  width: 116px !important;
+  height: 100px !important;
+  cursor: pointer;
+  transition: margin 0.5s ease !important;
+}
+.s_clients_4 .container .row .col-12:hover{
+  margin-top: -10px !important;
+}
+@media (max-width: 992px){
+   .s_clients_4 .container .row{
+    flex-direction: row;
+    flex-wrap: wrap !important;
+  }
+  .s_title .container h3{
+    padding: 15px 0px 0px 0px !important;
+  }
+  .s_clients_4 .container .row{
+    justify-content: center !important;
+  }
+  .s_clients_4 .container .row .col-12{
+    width: 90px !important;
+    height: 80px !important;
+  }
+  .s_title .container h3 span strong{
+    font-size: 25px !important;
+  }
+  .s_title .container span{
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 520px){
+  .s_title .container h3 span strong{
+    font-size: 20px !important;
+  }
+  .s_title .container span{
+    font-size: 12px !important;
+  }
+}
+
+.s_category_brands{
+  display: none !important;
+}
+/*End Style Shop By Brand*/
