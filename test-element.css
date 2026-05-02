@@ -1,6 +1,4 @@
-@media (max-width: 768px){
-  .s_icon_block_5 .mySwiper .left-btn,
-  .s_icon_block_5 .mySwiper .right-btn{
-    display: none !important;
-  }
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper{
+
 }
+

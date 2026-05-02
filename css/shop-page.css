@@ -1,0 +1,18 @@
+/*Start Update Style Shop Page*/
+.tp-shop-page .container .tp-shop-row #products_grid_before{
+  max-height: 88vh;
+  overflow-y: scroll;
+}
+.tp-shop-page .container .tp-shop-row #products_grid_before::-webkit-scrollbar {
+  width: 8px; 
+}
+.tp-shop-page .container .tp-shop-row #products_grid_before::-webkit-scrollbar-track {
+  background: #F2F2F3;  
+  border-radius: 10px;
+}
+.tp-shop-page .container .tp-shop-row #products_grid_before::-webkit-scrollbar-thumb {
+  background: #BEBFC1; 
+  height: 45px !important;
+  cursor: pointer;
+}
+/*End Update Style Shop Page*/

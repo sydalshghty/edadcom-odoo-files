@@ -1,60 +1,36 @@
 /*Start s_icon_block_5 Style*/
-.s_icon_block_5 .row .col-12{
-  height: 120px !important;
+.s_icon_block_5{
+  overflow: hidden;
+}
+.s_icon_block_5 .swiper-wrapper .swiper-slide{
   padding: 16px !important;
   background-color: #FEEEE7 !important;
   border-radius: 12px !important;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between !important;
-  align-items: center !important;
   cursor: pointer;
 }
-.s_icon_block_5 .row .col-12 img{
-  width: 70px !important;
-  height: 50px !important;
-  object-fit: contain !important;
+.s_icon_block_5 .swiper-wrapper .swiper-slide img{
+  height: 120px;
+  object-fit: contain;
 }
-.s_icon_block_5 .row .col-12 h6{
-  font-size: 12px !important;
+.s_icon_block_5 .swiper-wrapper .swiper-slide h6{
+  font-size: 18px !important;
   font-weight: 600;
   color: #0C0D0D;
-}
-.s_icon_block_5{
-  overflow: hidden !important;
-}
-.s_icon_block_5 .row{
-  flex-direction: row !important;
-  flex-wrap: nowrap !important;
-}
-.s_icon_block_5 .mySwiper{
- position: relative;
-}
-.s_icon_block_5 .mySwiper .left-btn,
-.s_icon_block_5 .mySwiper .right-btn{
-  position: absolute;
-  top: 50%;
-  width: 40px !important;
-  height: 40px !important;
-  background-color: #F26122 !important;
-  border-radius: 100% !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  z-index: 10;
-}
-.s_icon_block_5 .mySwiper .left-btn {
-  left: -50px;
-}
-.s_icon_block_5 .mySwiper .right-btn {
-  right: -50px;
 }
 .s_icon_block_5 .mySwiper .left-btn::after,
 .s_icon_block_5 .mySwiper .right-btn::after{
   display: none !important;
 }
-
-.s_icon_block_5 .mySwiper .row{
-  padding-left: 40px !important;
+.s_icon_block_5 .mySwiper .left-btn,
+.s_icon_block_5 .mySwiper .right-btn{
+    display: none !important;
+}
+@media (max-width: 600px){
+  .s_icon_block_5 .swiper-wrapper .swiper-slide img{
+    height: 70px;
+  }
+  .s_icon_block_5 .swiper-wrapper .swiper-slide h6{
+    font-size: 13px !important;
+  }
 }
 /*End s_icon_block_5 Style*/
