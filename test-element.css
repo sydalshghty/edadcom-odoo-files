@@ -1,4 +1,140 @@
+/*Start Shop Page Styel*/
+/*full col product*/
 .tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper{
+    border-color: transparent !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 12px !important;
+    padding: 10px !important;
+}
+/*content img product*/
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper .tp-product-top{
+
+}
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper .tp-product-top a{
+
+}
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper .tp-product-top a img{
 
 }
 
+/*out of stock span*/
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper .tp-product-top .tp-product-label{
+    
+}
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper .tp-product-top .tp-product-label span{
+
+}
+
+
+/*tp-action-buttons view,compare,wishlist-icons*/
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper .tp-product-top .tp-action-buttons{
+
+}
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper .tp-product-top .tp-action-buttons a,
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper .tp-product-top .tp-action-buttons button{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important;
+}
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper .tp-product-top .tp-action-buttons:last-child{
+    display: none;
+}
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper .tp-product-top .tp-action-buttons a i,
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper .tp-product-top .tp-action-buttons button i{
+
+}
+
+/*add to cart btn*/
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper .tp-product-top .tp-add-to-cart-btn{
+    background-color: #F26122 !important;
+    color: white !important;
+}
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper .tp-product-top .tp-add-to-cart-btn a{
+
+}
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper .tp-product-top .tp-add-to-cart-btn a i{
+    font-size: 20px !important;
+}
+
+/*content information product*/
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper .tp-product-content{
+    
+}
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper .tp-product-content h6{
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    color: #000000 !important;
+}
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper .tp-product-content h6 a{
+    font-size: 14px !important;
+}
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper .tp-product-content h6:hover{
+    color: #000000 !important;
+}
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper .tp-product-content div span{
+
+}
+/*End Shop Page Style*/
+
+@media (max-width: 600px){
+    .tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper .tp-product-content h6 a{
+        font-size: 14px !important;
+    }
+}
+
+/*products_grid*/
+
+/*col-img-product*/
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .col-12 form .tp-product-wrapper .tp-product-top a{
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .col-12 form .tp-product-wrapper .tp-product-top a img{
+  
+}
+
+/*actions icons*/
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .col-12 form .tp-product-wrapper .tp-product-top .tp-action-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px !important;
+    box-shadow: none !important;
+}
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .col-12 form .tp-product-wrapper .tp-product-top .tp-action-buttons button,
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .col-12 form .tp-product-wrapper .tp-product-top .tp-action-buttons a{
+    border-radius: 100%;
+}
+
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .col-12 form .tp-product-wrapper .tp-product-top .tp-action-buttons button i,
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .col-12 form .tp-product-wrapper .tp-product-top .tp-action-buttons a i{
+
+}
+
+/*content product information*/
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .col-12 form .tp-product-wrapper .tp-product-content h5{
+    
+}
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .col-12 form .tp-product-wrapper .tp-product-content .product_price span{
+
+}
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .col-12 form .tp-product-wrapper .tp-product-content[itemprop="description"]{
+    font-size: 14px;
+    color: #000000;
+}
+/*add to cart btn*/
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .col-12 form .tp-product-wrapper .tp-product-content .o_wsale_product_btn{
+
+}
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .col-12 form .tp-product-wrapper .tp-product-content .o_wsale_product_btn a{
+
+}
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .col-12 form .tp-product-wrapper .tp-product-content .o_wsale_product_btn i{
+
+}
+
+.tp-shop-page .container .tp-shop-row{
+    border-top: none !important;
+    border-left: 1px solid gray !important;
+    padding: 0px !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}

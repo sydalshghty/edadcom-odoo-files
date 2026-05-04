@@ -1,7 +1,12 @@
 /*Start Update Style Shop Page*/
 .tp-shop-page .container .tp-shop-row #products_grid_before{
-  max-height: 88vh;
+  height: 1000px;
   overflow-y: scroll;
+}
+.tp-shop-page .container .tp-shop-row #products_grid_before .tp-filters-container{
+  border-left: 1px solid #ddd !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
 }
 .tp-shop-page .container .tp-shop-row #products_grid_before::-webkit-scrollbar {
   width: 8px; 
@@ -14,5 +19,66 @@
   background: #BEBFC1; 
   height: 45px !important;
   cursor: pointer;
+}
+/*full col product*/
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .col-12{
+  margin-bottom: 5px !important;
+  margin-top: 10px !important;
+}
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper{
+    border-color: transparent !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 12px !important;
+    padding: 10px !important;
+}
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper .tp-product-top .tp-action-buttons a,
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper .tp-product-top .tp-action-buttons button{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important;
+}
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper .tp-product-top .tp-action-buttons .tp_show_similar_products{
+    display: none !important;
+}
+/*add to cart btn*/
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper .tp-product-top .tp-add-to-cart-btn a,
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .col-12 form .tp-product-wrapper .tp-product-content .o_wsale_product_btn a{
+    background-color: #F26122 !important;
+    color: white !important;
+    border-radius: 4px !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+}
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper .tp-product-top .tp-add-to-cart-btn a i,
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .col-12 form .tp-product-wrapper .tp-product-content .o_wsale_product_btn a i{
+    font-size: 20px !important;
+}
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper .tp-product-content h6 a,
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .col-12 form .tp-product-wrapper .tp-product-content h5 a{
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    color: #000000 !important;
+}
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper .tp-product-content h6 a:hover,
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .col-12 form .tp-product-wrapper .tp-product-content h5 a:hover{
+    color: #000000 !important;
+}
+@media (max-width: 600px){
+    .tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper .tp-product-content h6 a,
+    .tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .tp-product-item form .tp-product-wrapper .tp-product-content div span{
+        font-size: 14px !important;
+    }
+}
+
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .col-12 form .tp-product-wrapper .tp-product-top a img{
+  height: 200px !important; 
+}
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .col-12 form .tp-product-wrapper .tp-product-top .tp-action-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 8px !important;
+    box-shadow: none !important;
+}
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .col-12 form .tp-product-wrapper .tp-product-top .tp-action-buttons button,
+.tp-shop-page .container .tp-shop-row #products_grid .o_not_editable .row .col-12 form .tp-product-wrapper .tp-product-top .tp-action-buttons a{
+    border-radius: 100%;
 }
 /*End Update Style Shop Page*/
