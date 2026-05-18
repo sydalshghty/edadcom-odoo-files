@@ -1,115 +1,125 @@
-/*start login page style*/
-.login-page-content{
+/*Start Reset-Password Style*/
+.reset-password-alert{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    background-color: #eee;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    display: none;
 }
-.login-page-content .col-register{
-    background-color: #FEEEE7;
-    padding: 32px 16px;
-    border-radius: 8px;
+
+.reset-password-alert form{
+    width: 540px !important;
+    height: 360px !important;
+    padding: 32px 24px !important;
+    background-color: #ffffff !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,.1) !important;
+    margin-top: -100px;
 }
-.login-page-content .col-register .col-heading{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
+.reset-password-alert form .col-heading{
+    text-align: center;
 }
-.login-page-content .col-register .col-heading h1,
-.login-page-content .col-register .col-heading p{
+.reset-password-alert form .col-heading h1{
     font-size: 32px;
     font-weight: 600;
-}
-.login-page-content .col-register .col-heading h1{
     color: #0C0D0D;
 }
-.login-page-content .col-register .col-heading p{
-    color: #F26122;
+.reset-password-alert form .col-heading p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #313131;
 }
 
 
-.login-page-content .col-register .p-create{
+.reset-password-alert form .field-login{
+
+}
+.reset-password-alert form .field-login label{
     font-size: 16px;
     font-weight: 400;
     color: #000000;
 }
-
-.login-page-content .col-register .all-cols-icons{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-.login-page-content .col-register .all-cols-icons .col-icon{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-.login-page-content .col-register .all-cols-icons .col-icon svg{
-    color: #F26426;
-}
-.login-page-content .col-register .all-cols-icons .col-icon p{
+.reset-password-alert form .field-login input{
+    border: 1px solid #A4A5A8;
+    border-radius: 12px;
     font-size: 16px;
     font-weight: 400;
-    color: #000000;
-    margin-top: 15px;
+    color: #8A8C8F;
+    height: fit-content;
+}
+.reset-password-alert form .submit-btn{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 999;
+    display: none;
 }
 
-.login-page-content .col-register .all-cols-icons{
-    gap: 0px;
-}
-.login-page-content .col-register .all-cols-icons .col-icon svg{
-    width: 15px;
-    height: 15px;
-}
-.login-page-content .col-register .all-cols-icons .col-icon p{
-    font-size: 12px;
+.login-page-content{
+    position: relative;
+    z-index: 9999;
 }
 
-
-
-
-.login-page-content .col-register button{
+/*Start Reset-Password Style*/
+.reset-password-alert{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 48px;
-    border: none;
-    background-color: #F26122;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-bottom: 20px;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
-.login-page-content .col-register button a{
-    font-size: 16px;
-    font-weight: 600;
-    color: white;
+.reset-password-alert.active{
+    opacity: 1;
+    z-index: 999;
 }
-.login-page-content .col-register .edadcom-apps h2{
-    font-size: 20px;
+.reset-password-alert form{
+    min-width: 540px !important;
+    height: 320px !important;
+    padding: 32px 24px !important;
+    background-color: #ffffff !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,.1) !important;
+}
+.reset-password-alert form .col-heading{
+    text-align: center;
+}
+.reset-password-alert form .col-heading h1{
+    font-size: 32px;
     font-weight: 600;
     color: #0C0D0D;
 }
-.login-page-content .col-register .edadcom-apps p{
-    font-size: 20px;
+.reset-password-alert form .col-heading p{
+    font-size: 16px;
     font-weight: 400;
-    color: #57595B;
+    color: #313131;
 }
-.login-page-content .col-register .edadcom-apps .col-apps{
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
+.reset-password-alert form .field-login label{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+.reset-password-alert form .field-login input{
+    border: 1px solid #A4A5A8;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #8A8C8F;
+    height: fit-content;
 }
 
-.login-page-content .col-register button a{
-    font-size: 12px;
-}
-
-
-.login-page-content .col-register .edadcom-apps h2{
-    font-size: 14px;
-}
-.login-page-content .col-register .edadcom-apps p{
-    font-size: 12px;
+ 
+@media (max-width: 520px){
+    .reset-password-alert form .col-heading h1{
+        font-size: 20px;
+    }
 }

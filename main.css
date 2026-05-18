@@ -1594,3 +1594,402 @@ header .navbar .container-fluid .nav .dropdown a.dropdown-toggle:hover span{
     }
 }
 /*End Submenu-Categories Style*/
+
+/*start login page style*/
+.login-page-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-page-content .col-register{
+   max-width: 48% !important;
+    height: 708px;
+    background-color: #FEEEE7;
+    padding: 32px 16px;
+    border-radius: 8px;
+}
+.login-page-content .col-register .col-heading,
+.login-page-content .oe_login_form .col-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+.login-page-content .col-register .col-heading h1,
+.login-page-content .col-register .col-heading p,
+.login-page-content .oe_login_form .col-heading h1,
+.login-page-content .oe_login_form .col-heading p{
+    font-size: 32px;
+    font-weight: 600;
+}
+.login-page-content .col-register .col-heading h1,
+.login-page-content .oe_login_form .col-heading h1{
+    color: #0C0D0D;
+}
+.login-page-content .col-register .col-heading p,
+.login-page-content .oe_login_form .col-heading p{
+    color: #F26122;
+}
+
+
+.login-page-content .col-register .p-create,
+.login-page-content .oe_login_form .p-access{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.login-page-content .col-register .all-cols-icons{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.login-page-content .col-register .all-cols-icons .col-icon{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.login-page-content .col-register .all-cols-icons .col-icon svg{
+    color: #F26426;
+}
+.login-page-content .col-register .all-cols-icons .col-icon p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    margin-top: 15px;
+}
+
+.login-page-content .col-register button{
+    width: 100%;
+    height: 48px;
+    border: none;
+    background-color: #F26122;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.login-page-content .col-register button a{
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+.login-page-content .col-register .edadcom-apps h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #0C0D0D;
+}
+.login-page-content .col-register .edadcom-apps p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #57595B;
+}
+.login-page-content .col-register .edadcom-apps .col-apps{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+
+
+.login-page-content .oe_login_form{
+   max-width: 48% !important;
+   height: 708px;
+    padding: 32px 16px !important;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.login-page-content .oe_login_form .remember-forget-col{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-page-content .oe_login_form .remember-forget-col .col-remember{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.login-page-content .oe_login_form .remember-forget-col .col-remember span{
+    padding: 2px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #57595B;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.login-page-content .oe_login_form .remember-forget-col .col-remember span.active,
+.login-page-content .oe_login_form .check-robot-col .col-check span.active{
+   background-color: #F26426;
+   border: none;
+}
+.login-page-content .oe_login_form .remember-forget-col .col-remember span i,
+.login-page-content .oe_login_form .check-robot-col .col-check span i{
+    color: white;
+}
+.login-page-content .oe_login_form .remember-forget-col .col-remember p,
+.login-page-content .oe_login_form .remember-forget-col a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #57595B;
+}
+.login-page-content .oe_login_form .remember-forget-col .col-remember p{
+  margin-top: 12px;
+}
+
+.login-page-content .oe_login_form .check-robot-col{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 270px;
+    height: 68px;
+    border: 1px solid #EBEBEB;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 8px 16px;
+    margin-bottom: 10px;
+}
+.login-page-content .oe_login_form .check-robot-col .col-check{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.login-page-content .oe_login_form .check-robot-col .col-check span{
+   width: 24px;
+   height: 24px;
+   border: 1.65px solid #C4C4C4;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+}
+.login-page-content .oe_login_form .check-robot-col .col-check p{
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+}
+.login-page-content .oe_login_form .oe_login_buttons .small{
+    display: none !important;
+}
+.login-page-content .log-in-with-p{
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #57595B;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.login-page-content .log-in-with-p::before,
+.login-page-content .log-in-with-p::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: #8A8C8F;
+}
+.login-page-content .log-in-with-p::before{
+    left: 61%;
+}
+.login-page-content .log-in-with-p::after{
+    right: 61%;
+}
+.login-page-content .google-facebook-col{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-page-content .google-facebook-col img{
+  width: 40%;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+
+
+@media (max-width: 1500px){
+    .login-page-content .col-register .col-heading h1,
+    .login-page-content .col-register .col-heading p,
+    .login-page-content .oe_login_form .col-heading h1,
+    .login-page-content .oe_login_form .col-heading p{
+        font-size: 25px;
+    }
+}
+@media (max-width: 992px){
+    .login-page-content{
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .login-page-content .oe_login_form,
+    .login-page-content .col-register{
+        min-width: 100%;
+    }
+}
+@media (max-width: 520px){
+    .login-page-content{
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+    .login-page-content .oe_login_form,
+    .login-page-content .col-register{
+        height: fit-content;
+    }
+    .login-page-content .oe_login_form .col-heading h1,
+    .login-page-content .oe_login_form .col-heading p{
+        font-size: 18px;
+    }
+    .login-page-content .oe_login_form .p-access,
+    .login-page-content .col-register .p-create{
+        font-size: 12px;
+    }
+    .login-page-content .oe_login_form .remember-forget-col .col-remember span{
+        width: 16px;
+        height: 16px;
+    }
+    .login-page-content .oe_login_form .remember-forget-col .col-remember p,
+    .login-page-content .oe_login_form .remember-forget-col a{
+        font-size: 12px;
+    }
+    .login-page-content .oe_login_form .check-robot-col{
+        width: 220px;
+        height: 50px;
+    }
+    .login-page-content .oe_login_form .check-robot-col .col-check span{
+        width: 18px;
+        height: 18px;
+    }
+    .login-page-content .oe_login_form .check-robot-col .col-check span{
+        font-size: 12px;
+    }
+    .login-page-content .log-in-with-p{
+        font-size: 14px;
+    }
+    .login-page-content .log-in-with-p::before,
+    .login-page-content .log-in-with-p::after{
+        width: 34%;
+    }
+    .login-page-content .google-facebook-col img{
+       width: 140px;
+    }
+    .login-page-content .log-in-with-p::before{
+        left: 0;
+    }
+    .login-page-content .log-in-with-p::after{
+        right: 0;
+    }
+     .login-page-content .oe_login_form .check-robot-col img{
+        width: 35px;
+        object-fit: contain;
+    }
+    .login-page-content .oe_login_form .btn,
+    .login-page-content .col-register button{
+        font-size: 12px !important;
+        height: 40px !important;
+    }
+    .login-page-content .col-register button a{
+      font-size: 12px;
+    }
+    .login-page-content .col-register .col-heading h1,
+    .login-page-content .col-register .col-heading p{
+      font-size: 17px;
+    }
+    .login-page-content .col-register .all-cols-icons{
+      gap: 0px;
+    }
+    .login-page-content .col-register .all-cols-icons .col-icon svg{
+        width: 17px;
+        height: 17px;
+    }
+    .login-page-content .col-register .all-cols-icons .col-icon p{
+        font-size: 12px;
+    }
+    .login-page-content .col-register .edadcom-apps h2{
+      font-size: 14px;
+    }
+    .login-page-content .col-register .edadcom-apps p{
+        font-size: 12px;
+    }   
+}
+.login-page-content{
+    position: relative;
+    z-index: 1;
+}
+
+/*Reset-Password Style*/
+.reset-password-alert{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.reset-password-alert.active{
+    opacity: 1;
+    z-index: 999;
+}
+.reset-password-alert form{
+    min-width: 540px !important;
+    height: 320px !important;
+    padding: 32px 24px !important;
+    background-color: #ffffff !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,.1) !important;
+}
+.reset-password-alert form .col-heading{
+    text-align: center;
+}
+.reset-password-alert form .col-heading h1{
+    font-size: 32px;
+    font-weight: 600;
+    color: #0C0D0D;
+}
+.reset-password-alert form .col-heading p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #313131;
+}
+.reset-password-alert form .field-login label{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+.reset-password-alert form .field-login input{
+    border: 1px solid #A4A5A8;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #8A8C8F;
+}
+@media (max-width: 600px){
+    .reset-password-alert form{
+        min-width: 90% !important;
+        margin-left: auto;
+        margin-right: auto;
+        height: fit-content;
+    }
+    .reset-password-alert form .col-heading h1{
+        font-size: 25px;
+    }
+    .reset-password-alert form .col-heading p{
+        font-size: 12px;
+    }
+}
+@media (max-width: 520px){
+    .reset-password-alert form .col-heading h1{
+        font-size: 22px;
+    }
+}
+/*End login page style*/

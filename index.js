@@ -440,3 +440,26 @@ if (!checkrobotbtn) {
 checkrobotbtn.addEventListener("click", () => {
     checkrobotbtn.classList.toggle("active");
 })
+
+
+/*show forget-password-poupop*/
+const resetpasswordbtn = document.querySelector(".reset-password-btn");
+const resetpasswordalert = document.querySelector(".reset-password-alert");
+const form = document.querySelector(".reset-password-alert form");
+
+if (!resetpasswordbtn) return;
+if (!resetpasswordalert) return;
+
+resetpasswordbtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    resetpasswordalert.classList.add("active")
+    e.stopPropagation();
+})
+
+form.addEventListener("click", (e) => {
+    e.stopPropagation()
+})
+
+document.addEventListener("click", (e) => {
+    resetpasswordalert.classList.remove("active");
+})
