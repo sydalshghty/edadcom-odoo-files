@@ -157,3 +157,107 @@ document.addEventListener("click", (e) => {
     resetpasswordalert.classList.remove("active");
     e.stopPropagation();
 })
+
+//sign-up page
+//update sign-up form
+setTimeout(() => {
+    const form = document.querySelector(".oe_signup_form");
+    const labelEmail = document.querySelector(".oe_signup_form .field-login label");
+    const inputEmail = document.querySelector(".oe_signup_form .field-login input");
+
+    if (labelEmail) {
+        labelEmail.innerHTML = "Email address";
+    }
+    if (inputEmail) {
+        inputEmail.setAttribute("placeholder", "Enter your email");
+    }
+
+    console.log(form);
+    console.log(labelEmail);
+    console.log(inputEmail);
+}, 2000);
+
+console.log("hello, saeed")
+
+
+setTimeout(() => {
+    const checkrememberbtn = document.querySelector(".check-remember");
+    if (!checkrememberbtn) {
+        return;
+    }
+    checkrememberbtn.addEventListener("click", () => {
+        checkrememberbtn.classList.toggle("active")
+    });
+
+
+
+    const checkrobotbtn = document.querySelector(".check-robot");
+    if (!checkrobotbtn) {
+        return;
+    }
+    checkrobotbtn.addEventListener("click", () => {
+        checkrobotbtn.classList.toggle("active");
+    })
+
+
+    /*show forget-password-poupop*/
+    const resetpasswordbtn = document.querySelector(".reset-password-btn");
+    const resetpasswordalert = document.querySelector(".reset-password-alert");
+    const form = document.querySelector(".reset-password-alert form");
+
+    if (!resetpasswordbtn) return;
+    if (!resetpasswordalert) return;
+
+    resetpasswordbtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        resetpasswordalert.classList.add("active")
+        e.stopPropagation();
+    })
+
+    form.addEventListener("click", (e) => {
+        e.stopPropagation()
+    })
+
+    document.addEventListener("click", (e) => {
+        resetpasswordalert.classList.remove("active");
+    })
+}, 2000)
+
+
+
+
+setTimeout(() => {
+    /*Email*/
+    const labelEmail = document.querySelector(".oe_signup_form .field-login label");
+    const inputEmail = document.querySelector(".oe_signup_form .field-login input");
+
+    if (labelEmail) {
+        labelEmail.innerHTML = "Email address";
+    }
+    if (inputEmail) {
+        inputEmail.setAttribute("placeholder", "Enter your email");
+    }
+
+    /*pasword*/
+    const labelPassword = document.querySelector(".oe_signup_form .field-password label");
+    const inputPassword = document.querySelector(".oe_signup_form .field-password input");
+
+    if (labelPassword) {
+        labelPassword.innerHTML = "New Password";
+    }
+    if (inputPassword) {
+        inputPassword.setAttribute("placeholder", "********");
+    }
+
+    /*confirmPassword*/
+    const labelConfirmP = document.querySelector(".oe_signup_form .field-confirm_password label");
+    const inputConfirmP = document.querySelector(".oe_signup_form .field-confirm_password input");
+
+    if (labelConfirmP) {
+        labelConfirmP.innerHTML = "Confirm New Password";
+    }
+    if (inputConfirmP) {
+        inputConfirmP.setAttribute("placeholder", "********");
+    }
+
+}, 2000);

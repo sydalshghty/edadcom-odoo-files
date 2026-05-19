@@ -1,12 +1,14 @@
-/*start login page style*/
-.login-page-content{
+/*start login,Register page style*/
+.login-page-content,
+.sign-up-content{
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.login-page-content .col-register{
+.login-page-content .col-register,
+.sign-up-content .col-register{
    max-width: 48% !important;
     height: 708px;
     background-color: #FEEEE7;
@@ -14,7 +16,9 @@
     border-radius: 8px;
 }
 .login-page-content .col-register .col-heading,
-.login-page-content .oe_login_form .col-heading{
+.login-page-content .oe_login_form .col-heading,
+.sign-up-content .oe_signup_form .col-heading,
+.sign-up-content .col-register .col-heading{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,48 +27,62 @@
 .login-page-content .col-register .col-heading h1,
 .login-page-content .col-register .col-heading p,
 .login-page-content .oe_login_form .col-heading h1,
-.login-page-content .oe_login_form .col-heading p{
+.login-page-content .oe_login_form .col-heading p,
+.sign-up-content .oe_signup_form .col-heading h1,
+.sign-up-content .oe_signup_form .col-heading p,
+.sign-up-content .col-register .col-heading h1,
+.sign-up-content .col-register .col-heading p{
     font-size: 32px;
     font-weight: 600;
 }
 .login-page-content .col-register .col-heading h1,
-.login-page-content .oe_login_form .col-heading h1{
+.login-page-content .oe_login_form .col-heading h1,
+.sign-up-content .col-register .col-heading h1,
+.sign-up-content .oe_signup_form .col-heading h1{
     color: #0C0D0D;
 }
 .login-page-content .col-register .col-heading p,
-.login-page-content .oe_login_form .col-heading p{
+.login-page-content .oe_login_form .col-heading p,
+.sign-up-content .col-register .col-heading p,
+.sign-up-content .oe_signup_form .col-heading p{
     color: #F26122;
 }
 
 
 .login-page-content .col-register .p-create,
-.login-page-content .oe_login_form .p-access{
+.login-page-content .oe_login_form .p-access,
+.sign-up-content .col-register .p-create {
     font-size: 16px;
     font-weight: 400;
     color: #000000;
 }
 
-.login-page-content .col-register .all-cols-icons{
+.login-page-content .col-register .all-cols-icons,
+.sign-up-content .col-register .all-cols-icons{
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
-.login-page-content .col-register .all-cols-icons .col-icon{
+.login-page-content .col-register .all-cols-icons .col-icon,
+.sign-up-content .col-register .all-cols-icons .col-icon{
     display: flex;
     align-items: center;
     gap: 8px;
 }
-.login-page-content .col-register .all-cols-icons .col-icon svg{
+.login-page-content .col-register .all-cols-icons .col-icon svg,
+.sign-up-content .col-register .all-cols-icons .col-icon svg{
     color: #F26426;
 }
-.login-page-content .col-register .all-cols-icons .col-icon p{
+.login-page-content .col-register .all-cols-icons .col-icon p,
+.sign-up-content .col-register .all-cols-icons .col-icon p{
     font-size: 16px;
     font-weight: 400;
     color: #000000;
     margin-top: 15px;
 }
 
-.login-page-content .col-register button{
+.login-page-content .col-register button,
+.sign-up-content .col-register button{
     width: 100%;
     height: 48px;
     border: none;
@@ -73,22 +91,26 @@
     cursor: pointer;
     margin-bottom: 20px;
 }
-.login-page-content .col-register button a{
+.login-page-content .col-register button a,
+.sign-up-content .col-register button a{
     font-size: 16px;
     font-weight: 600;
     color: white;
 }
-.login-page-content .col-register .edadcom-apps h2{
+.login-page-content .col-register .edadcom-apps h2,
+.sign-up-content .col-register .edadcom-apps h2{
     font-size: 20px;
     font-weight: 600;
     color: #0C0D0D;
 }
-.login-page-content .col-register .edadcom-apps p{
+.login-page-content .col-register .edadcom-apps p,
+.sign-up-content .col-register .edadcom-apps p{
     font-size: 20px;
     font-weight: 400;
     color: #57595B;
 }
-.login-page-content .col-register .edadcom-apps .col-apps{
+.login-page-content .col-register .edadcom-apps .col-apps,
+.sign-up-content .col-register .edadcom-apps .col-apps{
     display: flex;
     flex-direction: row;
     gap: 16px;
@@ -96,7 +118,8 @@
 
 
 
-.login-page-content .oe_login_form{
+.login-page-content .oe_login_form,
+.sign-up-content .oe_signup_form{
    max-width: 48% !important;
    height: 708px;
     padding: 32px 16px !important;
@@ -179,7 +202,8 @@
 .login-page-content .oe_login_form .oe_login_buttons .small{
     display: none !important;
 }
-.login-page-content .log-in-with-p{
+.login-page-content .log-in-with-p,
+.sign-up-content .signup-with-p{
     position: relative;
     text-align: center;
     font-size: 16px;
@@ -190,7 +214,9 @@
     width: 100%;
 }
 .login-page-content .log-in-with-p::before,
-.login-page-content .log-in-with-p::after{
+.login-page-content .log-in-with-p::after,
+.sign-up-content .signup-with-p::before,
+.sign-up-content .signup-with-p::after{
     content: '';
     position: absolute;
     top: 50%;
@@ -198,58 +224,87 @@
     height: 1px;
     background-color: #8A8C8F;
 }
-.login-page-content .log-in-with-p::before{
+.login-page-content .log-in-with-p::before,
+.sign-up-content .signup-with-p::before{
     left: 61%;
 }
-.login-page-content .log-in-with-p::after{
+.login-page-content .log-in-with-p::after,
+.sign-up-content .signup-with-p::after{
     right: 61%;
 }
-.login-page-content .google-facebook-col{
+.login-page-content .google-facebook-col,
+.sign-up-content .google-facebook-col{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.login-page-content .google-facebook-col img{
+.login-page-content .google-facebook-col img,
+.sign-up-content .google-facebook-col img{
   width: 40%;
   cursor: pointer;
   object-fit: contain;
 }
-
+.sign-up-content .oe_signup_form .p-continuing{
+    font-size: 16px;
+    font-weight: 400;
+    color: #8A8C8F;
+    margin-top: 20px;
+}
+.sign-up-content .oe_signup_form .p-continuing span{
+    color: #57595B;
+    border-bottom: 1px solid #57595B;
+}
+.sign-up-content .signup-with-p{
+    margin-top: 0px !important;
+}
 
 
 @media (max-width: 1500px){
     .login-page-content .col-register .col-heading h1,
     .login-page-content .col-register .col-heading p,
     .login-page-content .oe_login_form .col-heading h1,
-    .login-page-content .oe_login_form .col-heading p{
+    .login-page-content .oe_login_form .col-heading p,
+    .sign-up-content .col-register .col-heading h1,
+    .sign-up-content .oe_signup_form .col-heading h1,
+    .sign-up-content .col-register .col-heading p,
+    .sign-up-content .oe_signup_form .col-heading p{
         font-size: 25px;
     }
 }
 @media (max-width: 992px){
-    .login-page-content{
+    .login-page-content,
+    .sign-up-content{
         flex-direction: column;
         margin-bottom: 40px;
     }
     .login-page-content .oe_login_form,
-    .login-page-content .col-register{
+    .login-page-content .col-register,
+    .sign-up-content .col-register,
+    .sign-up-content .oe_signup_form{
         min-width: 100%;
     }
 }
 @media (max-width: 520px){
-    .login-page-content{
+    .login-page-content,
+    .sign-up-content{
       padding-top: 0px;
       padding-bottom: 0px;
     }
     .login-page-content .oe_login_form,
-    .login-page-content .col-register{
+    .login-page-content .col-register,
+    .sign-up-content .col-register,
+    .sign-up-content .oe_signup_form{
         height: fit-content;
     }
     .login-page-content .oe_login_form .col-heading h1,
-    .login-page-content .oe_login_form .col-heading p{
+    .login-page-content .oe_login_form .col-heading p,
+    .sign-up-content .oe_signup_form .col-heading h1,
+    .sign-up-content .oe_signup_form .col-heading p{
         font-size: 18px;
     }
     .login-page-content .oe_login_form .p-access,
-    .login-page-content .col-register .p-create{
+    .login-page-content .col-register .p-create,
+    .sign-up-content .col-register .p-create{
         font-size: 12px;
     }
     .login-page-content .oe_login_form .remember-forget-col .col-remember span{
@@ -271,20 +326,26 @@
     .login-page-content .oe_login_form .check-robot-col .col-check span{
         font-size: 12px;
     }
-    .login-page-content .log-in-with-p{
+    .login-page-content .log-in-with-p,
+    .sign-up-content .signup-with-p{
         font-size: 14px;
     }
     .login-page-content .log-in-with-p::before,
-    .login-page-content .log-in-with-p::after{
+    .login-page-content .log-in-with-p::after,
+    .sign-up-content .signup-with-p::after,
+    .sign-up-content .signup-with-p::before{
         width: 34%;
     }
-    .login-page-content .google-facebook-col img{
+    .login-page-content .google-facebook-col img,
+    .sign-up-content .google-facebook-col img{
        width: 140px;
     }
-    .login-page-content .log-in-with-p::before{
+    .login-page-content .log-in-with-p::before,
+    .sign-up-content .signup-with-p::before{
         left: 0;
     }
-    .login-page-content .log-in-with-p::after{
+    .login-page-content .log-in-with-p::after,
+    .sign-up-content .signup-with-p::after{
         right: 0;
     }
      .login-page-content .oe_login_form .check-robot-col img{
@@ -292,38 +353,51 @@
         object-fit: contain;
     }
     .login-page-content .oe_login_form .btn,
-    .login-page-content .col-register button{
+    .login-page-content .col-register button,
+    .sign-up-content .oe_signup_form .btn,
+    .sign-up-content .col-register button{
         font-size: 12px !important;
         height: 40px !important;
     }
-    .login-page-content .col-register button a{
+    .login-page-content .col-register button a,
+    .sign-up-content .col-register button a{
       font-size: 12px;
     }
     .login-page-content .col-register .col-heading h1,
-    .login-page-content .col-register .col-heading p{
+    .login-page-content .col-register .col-heading p,
+    .sign-up-content .col-register .col-heading h1,
+    .sign-up-content .col-register .col-heading p{
       font-size: 17px;
     }
     .login-page-content .col-register .all-cols-icons{
       gap: 0px;
     }
-    .login-page-content .col-register .all-cols-icons .col-icon svg{
+    .login-page-content .col-register .all-cols-icons .col-icon svg,
+    .sign-up-content .col-register .all-cols-icons .col-icon svg{
         width: 17px;
         height: 17px;
     }
-    .login-page-content .col-register .all-cols-icons .col-icon p{
+    .login-page-content .col-register .all-cols-icons .col-icon p,
+    .sign-up-content .col-register .all-cols-icons .col-icon p{
         font-size: 12px;
     }
-    .login-page-content .col-register .edadcom-apps h2{
+    .login-page-content .col-register .edadcom-apps h2,
+    .sign-up-content .col-register .edadcom-apps h2{
       font-size: 14px;
     }
-    .login-page-content .col-register .edadcom-apps p{
+    .login-page-content .col-register .edadcom-apps p,
+    .sign-up-content .col-register .edadcom-apps p{
         font-size: 12px;
-    }   
+    }
+    .sign-up-content .oe_signup_form .p-continuing{
+      font-size: 14px;
+    }
 }
 .login-page-content{
     position: relative;
     z-index: 1;
 }
+
 /*Reset-Password Style*/
 .reset-password-alert{
     position: fixed;
@@ -394,4 +468,4 @@
         font-size: 22px;
     }
 }
-/*End login page style*/
+/*End login,Register page style*/

@@ -1,0 +1,98 @@
+<t name="Sign up login" t-name="auth_signup.signup">
+    <t t-call="web.login_layout">
+        <div class="sign-up-content container">
+            <form class="oe_signup_form" role="form" method="post" t-if="not message">
+                <div class="col-heading">
+                    <h1>New to Edadcom</h1>
+                    <p>Register Now!</p>
+                </div>
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+
+                <t t-call="auth_signup.fields">
+                    <t t-set="only_passwords" t-value="bool(token and not invalid_token)" />
+                </t>
+
+                <p class="alert alert-danger" t-if="error" role="alert">
+                    <t t-esc="error" />
+                </p>
+                <input type="hidden" name="redirect" t-att-value="redirect" />
+                <input type="hidden" name="token" t-att-value="token" />
+                <div class="text-center oe_login_buttons d-grid pt-3">
+                    <button type="submit" class="btn btn-primary">Continue</button>
+                    <p class="p-continuing">By continuing, you agree to Edadcom's <span>Conditions of Use</span>
+                        and <span>Privacy Notice.</span></p>
+                    <p class="signup-with-p">Or sign up With</p>
+                    <div class="google-facebook-col">
+                        <img src="https://i.postimg.cc/QdXgQWtL/Frame-1261153851.png" alt="google-img" />
+                        <img src="https://i.postimg.cc/QN1cvq92/Frame-1261153852.png" alt="facebook-img" />
+                    </div>
+
+                    <div class="o_login_auth" />
+                </div>
+            </form>
+            <div class="col-register">
+                <div class="col-heading">
+                    <h1>Already a member?</h1>
+                    <p>Sign in!</p>
+                </div>
+                <p class="p-create">Get access to your orders, save your favorite tools, and get personalized deals made
+                    just for you!</p>
+                <div class="all-cols-icons">
+                    <div class="col-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-handbag-icon lucide-handbag">
+                            <path
+                                d="M2.048 18.566A2 2 0 0 0 4 21h16a2 2 0 0 0 1.952-2.434l-2-9A2 2 0 0 0 18 8H6a2 2 0 0 0-1.952 1.566z" />
+                            <path d="M8 11V6a4 4 0 0 1 8 0v5" />
+                        </svg>
+                        <p>Checkout even faster</p>
+                    </div>
+                    <div class="col-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-heart-icon lucide-heart">
+                            <path
+                                d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                        </svg>
+                        <p>Add items to your wishlist</p>
+                    </div>
+                    <div class="col-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-box-icon lucide-box">
+                            <path
+                                d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
+                            <path d="m3.3 7 8.7 5 8.7-5" />
+                            <path d="M12 22V12" />
+                        </svg>
+                        <p>Track your order history</p>
+                    </div>
+                    <div class="col-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-user-round-check-icon lucide-user-round-check">
+                            <path d="M2 21a8 8 0 0 1 13.292-6" />
+                            <circle cx="10" cy="8" r="5" />
+                            <path d="m16 19 2 2 4-4" />
+                        </svg>
+                        <p>Get all these alerts on the go with our app experience!</p>
+                    </div>
+                </div>
+                <button>
+                    <a href="https://www.edadcom.com/web/login?">Log in</a>
+                </button>
+                <div class="edadcom-apps">
+                    <h2>Get the Edadcom apps</h2>
+                    <p>Unlock special deals and shop top-quality tools anytime, anywhere!</p>
+                    <div class="col-apps">
+                        <img src="https://i.postimg.cc/mD6cRKJQ/Get-It-On-Google-Play-Badge-Web-color-English-2-(2).png"
+                            alt="google-play" />
+                        <img src="https://i.postimg.cc/QMfCkR88/Download-on-the-App-Store-Badge-US-UK-RGB-blk-092917-2-(2).png"
+                            alt="app-store" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+</t>
