@@ -1,263 +1,137 @@
-/*sidepanel supsupcategory*/
-if (!sidePanel) return;
-if (!document.querySelector(".col-heading-sidepanel"));
-const colheading = document.createElement("div");
-colheading.className = "col-heading-sidepanel";
-
-const supsupcategory = document.createElement("p");
-supsupcategory.textContent = "supsupcategory";
-supsupcategory.className = "supsupcategory";
-
-const closesidepanel = document.createElement("div");
-closesidepanel.className = "close-sidepanel";
-
-const img = document.createElement("img");
-img.src = "https://i.postimg.cc/rF3bBRyJ/x-close.jpg";
-img.alt = "close-icon";
-
-const closep = document.createElement("p");
-closep.textContent = "Close";
-
-closesidepanel.appendChild(img);
-closesidepanel.appendChild(closep);
-
-
-colheading.appendChild(supsupcategory);
-colheading.appendChild(closesidepanel);
-
-const sidePanel = document.createElement("div");
-sidePanel.prepend(colheading);
-
-
-
-
+/*update Product-Page Content*/
 setTimeout(() => {
-    const closesidepanel = document.querySelector(".close-sidepanel");
-    const sidepanel = document.querySelector(".side-panel");
+    const productDetailSection = document.getElementById("product_detail");
 
-    if (!sidepanel) return;
-    if (!closesidepanel) return;
-    closesidepanel.addEventListener("click", () => {
-        sidepanel.classList.add("none");
-    })
-}, 2000)
+    const topLinks = document.querySelector(".tp-breadcrumb-wrapper");
 
+    const allLis = document.querySelectorAll(".tp-breadcrumb-wrapper ol li");
 
-setTimeout(() => {
-    const closeBtn = e.target.closest(".close-sidepanel");
+    if (!productDetailSection) return;
+    productDetailSection.prepend(topLinks);
 
-    if (!closeBtn) return;
+    if (!topLinks) return;
+    topLinks.className = "top-links";
 
-    const sidepanel = document.querySelector(".side-panel");
+    /*create chevron right-icon*/
+    const rightIcon = document.createElement("i");
 
-    if (!sidepanel) return;
+    rightIcon.className = "fa-solid fa-chevron-right";
 
-    sidepanel.classList.add("none");
-    console.log("side panel")
-}, 2000)
+    allLis.forEach((li, index) => {
 
 
+        if (index !== allLis.length - 1) {
 
+            li.appendChild(rightIcon.cloneNode(true));
 
-document.addEventListener("click", (e) => {
-
-    const sidepanel = document.querySelector(".side-panel");
-
-    if (!sidepanel) return;
-
-    sidepanel.classList.remove("active");
-    sidepanel.innerHTML = "";
-
-});
-
-
-setTimeout(() => {
-
-    const allmaincategories = document.querySelectorAll('[tp-menu-id] h6');
-
-    if (!allmaincategories.length) return;
-
-    allmaincategories.forEach((supcategory) => {
-
-        supcategory.addEventListener("click", () => {
-
-            const value = supcategory.textContent.trim();
-
-            localStorage.setItem("subcategory", value);
-
-            const currentSupCategory = document.querySelector(".supcategory");
-
-            if (currentSupCategory) {
-
-                currentSupCategory.innerText = value;
-
-            }
-
-        });
+        }
 
     });
 
-}, 2000);
+}, 200)
 
 
 
-/*All SupSup Categories*/
+/*create col-three content on product-information*/
 setTimeout(() => {
-    const allSupSupCategories = document.querySelectorAll('[data-submenu-id] a');
+    const product_detail_main = document.getElementById("product_detail_main");
 
-    if (!allSupSupCategories.length) return;
-    allSupSupCategories.forEach((supsupcategory) => {
-        supsupcategory.addEventListener("click", () => {
-            const value = supsupcategory.textContent;
-            console.log(value);
+    const colThreeProduct = document.createElement("div");
+    colThreeProduct.className = "col-three-product";
 
-            localStorage.setItem("supsupcategory", value);
-        })
-    })
+    //create price-product
+    const priceProduct = document.querySelector("#product_detail_main .product_price");
+    if (!priceProduct) return;
+    priceProduct.className = "col-price-product";
+    colThreeProduct.prepend(priceProduct);
 
-}, 2000)
+    //create col-delivery
+    const mainDiv = document.createElement("div");
+    mainDiv.className = "col-delivery";
+    const childDiv = document.createElement("div");
+    childDiv.className = "col-deliver";
+    const img = document.createElement("img");
+    img.src = "https://i.postimg.cc/02q4yjkG/marker-pin-01.png";
+    img.alt = "icon-deliver";
+    const pDeliver = document.createElement("p");
+    pDeliver.innerText = "Deliver to Riyadh";
+    childDiv.appendChild(img);
+    childDiv.appendChild(pDeliver);
 
+    const rightIcon = document.createElement("i");
+    rightIcon.className = "fa-solid fa-chevron-right";
 
-/*check btn login-page*/
-const checkrememberbtn = document.querySelector(".check-remember");
-if (!checkrememberbtn) {
-    return;
-}
-checkrememberbtn.addEventListener("click", () => {
-    checkrememberbtn.classList.toggle("active")
-});
+    mainDiv.appendChild(childDiv);
+    mainDiv.appendChild(rightIcon);
+    colThreeProduct.appendChild(mainDiv);
 
+    //create FREE-delivery
+    const freeDeliveryCol = document.createElement("p");
+    freeDeliveryCol.className = "freedelivery-col";
+    const span = document.createElement("span");
+    span.innerHTML = "FREE delivery";
+    const p = document.createElement("p");
+    p.innerText = "on over 100 SAR";
+    freeDeliveryCol.appendChild(span);
+    freeDeliveryCol.appendChild(p);
+    colThreeProduct.appendChild(freeDeliveryCol);
 
+    /*form update cart-product*/
+    const formProduct = document.querySelector('[action="/shop/cart/update"]');
+    colThreeProduct.appendChild(formProduct);
 
-const checkrobotbtn = document.querySelector(".check-robot");
-if (!checkrobotbtn) {
-    return;
-}
-checkrobotbtn.addEventListener("click", () => {
-    checkrobotbtn.classList.toggle("active");
-})
+    /*create all-col-icons-bottom*/
+    const allIcons = document.createElement("div");
+    allIcons.className = "all-icons";
+    //colIcon1
+    const colIcon_1 = document.createElement("div");
+    colIcon_1.className = "col-icon";
 
+    const imgIcon1 = document.createElement("img");
+    imgIcon1.src = "https://i.postimg.cc/Fs9pcf7g/award-03.png";
+    imgIcon1.alt = "icon";
 
-/*show forget-password-poupop*/
-const resetpasswordbtn = document.querySelector(".reset-password-btn");
-const resetpasswordalert = document.querySelector(".reset-password-alert");
+    const p1 = document.createElement("p");
+    p1.innerText = "Two-years warranty";
 
-if (!resetpasswordbtn) return;
-if (!resetpasswordalert) return;
+    colIcon_1.appendChild(imgIcon1);
+    colIcon_1.appendChild(p1);
+    allIcons.appendChild(colIcon_1);
 
-resetpasswordbtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    resetpasswordalert.classList.add("active")
-})
+    //colIcon2
+    const colIcon_2 = document.createElement("div");
+    colIcon_2.className = "col-icon";
 
-resetpasswordalert.addEventListener("click", (e) => {
-    e.stopPropagation()
-})
-document.addEventListener("click", (e) => {
-    resetpasswordalert.classList.remove("active");
-    e.stopPropagation();
-})
+    const imgIcon2 = document.createElement("img");
+    imgIcon2.src = "https://i.postimg.cc/QdcM3MqN/reverse-right.png";
+    imgIcon2.alt = "icon";
 
-//sign-up page
-//update sign-up form
-setTimeout(() => {
-    const form = document.querySelector(".oe_signup_form");
-    const labelEmail = document.querySelector(".oe_signup_form .field-login label");
-    const inputEmail = document.querySelector(".oe_signup_form .field-login input");
+    const p2 = document.createElement("p");
+    p2.innerText = "Free Returns Terms and Conditions Apply";
 
-    if (labelEmail) {
-        labelEmail.innerHTML = "Email address";
-    }
-    if (inputEmail) {
-        inputEmail.setAttribute("placeholder", "Enter your email");
-    }
+    colIcon_2.appendChild(imgIcon2);
+    colIcon_2.appendChild(p2);
+    allIcons.appendChild(colIcon_2);
 
-    console.log(form);
-    console.log(labelEmail);
-    console.log(inputEmail);
-}, 2000);
+    //colIcon3
+    const colIcon_3 = document.createElement("div");
+    colIcon_3.className = "col-icon";
 
-console.log("hello, saeed")
+    const imgIcon3 = document.createElement("img");
+    imgIcon3.src = "https://i.postimg.cc/YC3DsJsd/shield-tick-(2).png";
+    imgIcon3.alt = "icon";
 
+    const p3 = document.createElement("p");
+    p3.innerText = "Secure payments";
 
-setTimeout(() => {
-    const checkrememberbtn = document.querySelector(".check-remember");
-    if (!checkrememberbtn) {
-        return;
-    }
-    checkrememberbtn.addEventListener("click", () => {
-        checkrememberbtn.classList.toggle("active")
-    });
+    colIcon_3.appendChild(imgIcon3);
+    colIcon_3.appendChild(p3);
+    allIcons.appendChild(colIcon_3);
 
+    colThreeProduct.appendChild(allIcons);
 
-
-    const checkrobotbtn = document.querySelector(".check-robot");
-    if (!checkrobotbtn) {
-        return;
-    }
-    checkrobotbtn.addEventListener("click", () => {
-        checkrobotbtn.classList.toggle("active");
-    })
-
-
-    /*show forget-password-poupop*/
-    const resetpasswordbtn = document.querySelector(".reset-password-btn");
-    const resetpasswordalert = document.querySelector(".reset-password-alert");
-    const form = document.querySelector(".reset-password-alert form");
-
-    if (!resetpasswordbtn) return;
-    if (!resetpasswordalert) return;
-
-    resetpasswordbtn.addEventListener("click", (e) => {
-        e.preventDefault();
-        resetpasswordalert.classList.add("active")
-        e.stopPropagation();
-    })
-
-    form.addEventListener("click", (e) => {
-        e.stopPropagation()
-    })
-
-    document.addEventListener("click", (e) => {
-        resetpasswordalert.classList.remove("active");
-    })
-}, 2000)
+    if (!product_detail_main) return;
+    product_detail_main.appendChild(colThreeProduct);
+}, 10)
 
 
-
-
-setTimeout(() => {
-    /*Email*/
-    const labelEmail = document.querySelector(".oe_signup_form .field-login label");
-    const inputEmail = document.querySelector(".oe_signup_form .field-login input");
-
-    if (labelEmail) {
-        labelEmail.innerHTML = "Email address";
-    }
-    if (inputEmail) {
-        inputEmail.setAttribute("placeholder", "Enter your email");
-    }
-
-    /*pasword*/
-    const labelPassword = document.querySelector(".oe_signup_form .field-password label");
-    const inputPassword = document.querySelector(".oe_signup_form .field-password input");
-
-    if (labelPassword) {
-        labelPassword.innerHTML = "New Password";
-    }
-    if (inputPassword) {
-        inputPassword.setAttribute("placeholder", "********");
-    }
-
-    /*confirmPassword*/
-    const labelConfirmP = document.querySelector(".oe_signup_form .field-confirm_password label");
-    const inputConfirmP = document.querySelector(".oe_signup_form .field-confirm_password input");
-
-    if (labelConfirmP) {
-        labelConfirmP.innerHTML = "Confirm New Password";
-    }
-    if (inputConfirmP) {
-        inputConfirmP.setAttribute("placeholder", "********");
-    }
-
-}, 2000);
