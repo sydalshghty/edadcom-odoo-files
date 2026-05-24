@@ -491,7 +491,6 @@ setTimeout(() => {
 
     allLis.forEach((li, index) => {
 
-
         if (index !== allLis.length - 1) {
 
             li.appendChild(rightIcon.cloneNode(true));
@@ -500,7 +499,7 @@ setTimeout(() => {
 
     });
 
-}, 100)
+}, 200)
 
 
 
@@ -604,5 +603,26 @@ setTimeout(() => {
 
     if (!product_detail_main) return;
     product_detail_main.appendChild(colThreeProduct);
-}, 100)
+}, 10)
+
+
+
+/*update out of stock*/
+setTimeout(() => {
+    const notificationStock = document.querySelector("#product_stock_notification_message");
+    const iconNotifiaction = document.createElement("img");
+    iconNotifiaction.src = "https://i.postimg.cc/N0Jv8Sj0/bell-ringing-01.png";
+    iconNotifiaction.alt = "icon-notifaction";
+    if (!notificationStock) return;
+    notificationStock.prepend(iconNotifiaction);
+}, 2000)
+
+setTimeout(() => {
+    const sendEmailBtn = document.querySelector("#product_stock_notification_form_submit_button");
+    const iconSend = document.createElement("img");
+    iconSend.src = "https://i.postimg.cc/NFfKLWLh/Component-27.png";
+    iconSend.alt = "icon-send";
+    if (!sendEmailBtn) return;
+    sendEmailBtn.prepend(iconSend);
+}, 2000)
 
