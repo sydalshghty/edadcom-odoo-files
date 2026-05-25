@@ -156,3 +156,33 @@ setTimeout(() => {
     if (!sendEmailBtn) return;
     sendEmailBtn.prepend(iconSend);
 }, 2000)
+
+
+
+
+setTimeout(() => {
+    const sendEmailBtn = document.querySelector("#product_stock_notification_form_submit_button");
+    const iconSend = document.createElement("img");
+    iconSend.src = "https://i.postimg.cc/NFfKLWLh/Component-27.png";
+    iconSend.alt = "icon-send";
+    if (!sendEmailBtn) return;
+    sendEmailBtn.prepend(iconSend);
+}, 2000)
+
+function SendBtnEmail() {
+    const sendEmailBtn = document.querySelector("#product_stock_notification_form_submit_button");
+    const iconSend = document.createElement("img");
+    iconSend.src = "https://i.postimg.cc/NFfKLWLh/Component-27.png";
+    iconSend.alt = "icon-send";
+    if (!sendEmailBtn) return;
+    sendEmailBtn.prepend(iconSend);
+}
+SendBtnEmail();
+
+document.addEventListener("DOMContentLoaded", () => {
+    SendBtnEmail();
+})
+
+const mainDiv = document.createElement("a");
+mainDiv.href = "";
+

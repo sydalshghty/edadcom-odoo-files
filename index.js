@@ -470,7 +470,7 @@ setTimeout(() => {
 
 
 
-/*update Product-Page Content*/
+/* update Product - Page Content */
 setTimeout(() => {
     const productDetailSection = document.getElementById("product_detail");
 
@@ -490,6 +490,7 @@ setTimeout(() => {
     rightIcon.className = "fa-solid fa-chevron-right";
 
     allLis.forEach((li, index) => {
+
 
         if (index !== allLis.length - 1) {
 
@@ -517,8 +518,10 @@ setTimeout(() => {
     colThreeProduct.prepend(priceProduct);
 
     //create col-delivery
-    const mainDiv = document.createElement("div");
+    const mainDiv = document.createElement("a");
+    mainDiv.href = "#"
     mainDiv.className = "col-delivery";
+
     const childDiv = document.createElement("div");
     childDiv.className = "col-deliver";
     const img = document.createElement("img");
@@ -603,7 +606,7 @@ setTimeout(() => {
 
     if (!product_detail_main) return;
     product_detail_main.appendChild(colThreeProduct);
-}, 10)
+}, 1000)
 
 
 
@@ -615,7 +618,7 @@ setTimeout(() => {
     iconNotifiaction.alt = "icon-notifaction";
     if (!notificationStock) return;
     notificationStock.prepend(iconNotifiaction);
-}, 2000)
+}, 1000)
 
 setTimeout(() => {
     const sendEmailBtn = document.querySelector("#product_stock_notification_form_submit_button");
@@ -624,5 +627,5 @@ setTimeout(() => {
     iconSend.alt = "icon-send";
     if (!sendEmailBtn) return;
     sendEmailBtn.prepend(iconSend);
-}, 2000)
+}, 1000)
 

@@ -468,4 +468,7 @@
         font-size: 22px;
     }
 }
+.reset-password-alert form .alert-danger{
+    display: none !important;
+}
 /*End login,Register page style*/

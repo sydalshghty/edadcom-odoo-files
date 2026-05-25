@@ -1,5 +1,39 @@
 /*Start Product-Page Style*/
-/*top-links-style*/
-#product_detail .top-links{
-    margin-top: 20px;
+#product_detail #product_detail_main #o-carousel-product{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+#product_detail #product_detail_main .o_carousel_product_outer {
+    width: 420px;
+    height: 347px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 24px !important;
+    overflow: visible !important;
+    margin-top: 20px !important;
+    margin-left: 20px !important;
+}
+#product_detail #product_detail_main .o_carousel_product_outer .carousel-inner{
+    width: 298px !important;
+    height: 298px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto !important;
+    margin-right: auto !important;
+   margin-top: -20px;
+}
+#product_detail #product_detail_main .o_carousel_product_outer .carousel-inner .carousel-item{
+    min-height: 347px !important;
+    font-size: 20px !important;
+}
+
+#product_detail #product_detail_main .o_carousel_product_indicators{
+    width: 420px !important;
+    overflow: hidden !important;
+
+    margin-left: 20px !important;
+    margin-right: 20px !important;
 }
