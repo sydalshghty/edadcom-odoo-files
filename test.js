@@ -1,25 +1,25 @@
 /*update Product-Page Content*/
-setTimeout(() => {
+/*setTimeout(() => {
     const productDetailSection = document.getElementById("product_detail");
 
     const topLinks = document.querySelector(".tp-breadcrumb-wrapper");
-
+    
     const allLis = document.querySelectorAll(".tp-breadcrumb-wrapper ol li");
 
     if (!productDetailSection) return;
     productDetailSection.prepend(topLinks);
-
+    
     if (!topLinks) return;
     topLinks.className = "top-links";
 
-    /*create chevron right-icon*/
+    
     const rightIcon = document.createElement("i");
 
     rightIcon.className = "fa-solid fa-chevron-right";
 
     allLis.forEach((li, index) => {
 
-
+        
         if (index !== allLis.length - 1) {
 
             li.appendChild(rightIcon.cloneNode(true));
@@ -29,11 +29,11 @@ setTimeout(() => {
     });
 
 }, 200)
-
+*/
 
 
 /*create col-three content on product-information*/
-setTimeout(() => {
+/*setTimeout(() => {
     const product_detail_main = document.getElementById("product_detail_main");
 
     const colThreeProduct = document.createElement("div");
@@ -46,8 +46,10 @@ setTimeout(() => {
     colThreeProduct.prepend(priceProduct);
 
     //create col-delivery
-    const mainDiv = document.createElement("div");
+    const mainDiv = document.createElement("a");
+    mainDiv.href = "#"
     mainDiv.className = "col-delivery";
+    
     const childDiv = document.createElement("div");
     childDiv.className = "col-deliver";
     const img = document.createElement("img");
@@ -64,7 +66,7 @@ setTimeout(() => {
     mainDiv.appendChild(childDiv);
     mainDiv.appendChild(rightIcon);
     colThreeProduct.appendChild(mainDiv);
-
+    
     //create FREE-delivery
     const freeDeliveryCol = document.createElement("p");
     freeDeliveryCol.className = "freedelivery-col";
@@ -75,12 +77,12 @@ setTimeout(() => {
     freeDeliveryCol.appendChild(span);
     freeDeliveryCol.appendChild(p);
     colThreeProduct.appendChild(freeDeliveryCol);
-
-    /*form update cart-product*/
+  
+    //form update cart-product
     const formProduct = document.querySelector('[action="/shop/cart/update"]');
     colThreeProduct.appendChild(formProduct);
-
-    /*create all-col-icons-bottom*/
+    
+    //create all-col-icons-bottom
     const allIcons = document.createElement("div");
     allIcons.className = "all-icons";
     //colIcon1
@@ -129,36 +131,22 @@ setTimeout(() => {
     allIcons.appendChild(colIcon_3);
 
     colThreeProduct.appendChild(allIcons);
-
+    
     if (!product_detail_main) return;
     product_detail_main.appendChild(colThreeProduct);
-}, 10)
-
-
+}, 1000)
+*/
 
 
 /*update out of stock*/
-setTimeout(() => {
-    let notificationStock = document.querySelector("#product_stock_notification_message");
+/*setTimeout(() => {
+    const notificationStock = document.querySelector("#product_stock_notification_message");
     const iconNotifiaction = document.createElement("img");
     iconNotifiaction.src = "https://i.postimg.cc/N0Jv8Sj0/bell-ringing-01.png";
     iconNotifiaction.alt = "icon-notifaction";
     if (!notificationStock) return;
     notificationStock.prepend(iconNotifiaction);
-}, 2000)
-
-
-setTimeout(() => {
-    const sendEmailBtn = document.querySelector("#product_stock_notification_form_submit_button");
-    const iconSend = document.createElement("img");
-    iconSend.src = "";
-    iconSend.alt = "icon-send";
-    if (!sendEmailBtn) return;
-    sendEmailBtn.prepend(iconSend);
-}, 2000)
-
-
-
+}, 1000)
 
 setTimeout(() => {
     const sendEmailBtn = document.querySelector("#product_stock_notification_form_submit_button");
@@ -167,22 +155,15 @@ setTimeout(() => {
     iconSend.alt = "icon-send";
     if (!sendEmailBtn) return;
     sendEmailBtn.prepend(iconSend);
-}, 2000)
+}, 1000)
 
-function SendBtnEmail() {
-    const sendEmailBtn = document.querySelector("#product_stock_notification_form_submit_button");
-    const iconSend = document.createElement("img");
-    iconSend.src = "https://i.postimg.cc/NFfKLWLh/Component-27.png";
-    iconSend.alt = "icon-send";
-    if (!sendEmailBtn) return;
-    sendEmailBtn.prepend(iconSend);
-}
-SendBtnEmail();
 
-document.addEventListener("DOMContentLoaded", () => {
-    SendBtnEmail();
-})
-
-const mainDiv = document.createElement("a");
-mainDiv.href = "";
-
+setTimeout(() => {
+    const productDescription = document.querySelector("#product_detail_main #product_details .text-muted.my-2");
+   if (!productDescription) return;
+    console.log(productDescription);
+    productDescription.innerHTML = productDescription.innerHTML
+        .replaceAll("•", "")
+        .replaceAll("<br>", ",")
+}, 1000);
+*/

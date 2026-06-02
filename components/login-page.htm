@@ -48,16 +48,6 @@
                     <a href="#" class="reset-password-btn">Forget Password?</a>
                 </div>
 
-                <div class="check-robot-col">
-                    <div class="col-check">
-                        <span class="check-btn check-robot">
-                            <i class="fa-solid fa-check" />
-                        </span>
-                        <p>I’m not a robot</p>
-                    </div>
-                    <img src="https://i.postimg.cc/Pf9YLwm7/recaptcha-container-(1).png" alt="robot-img" />
-                </div>
-
                 <p class="alert alert-danger" t-if="error" role="alert">
                     <t t-esc="error" />
                 </p>
@@ -76,11 +66,6 @@
                 </div>
 
                 <p class="log-in-with-p">Or log in With</p>
-
-                <div class="google-facebook-col">
-                    <img src="https://i.postimg.cc/QdXgQWtL/Frame-1261153851.png" alt="google-img" />
-                    <img src="https://i.postimg.cc/QN1cvq92/Frame-1261153852.png" alt="facebook-img" />
-                </div>
 
                 <input type="hidden" name="redirect" t-att-value="redirect" />
             </form>
@@ -167,7 +152,7 @@
                 <t t-if="not token">
                     <div class="mb-3 field-login">
                         <label for="login" class="col-form-label">Email address</label>
-                        <input type="email" placeholder="Enter your email" name="login" t-att-value="login" id="login"
+                        <input type="text" placeholder="Enter your email" name="login" t-att-value="login" id="login"
                             class="form-control" autofocus="autofocus" required="required" autocapitalize="off" />
                     </div>
                 </t>
@@ -178,7 +163,7 @@
                 <input type="hidden" name="redirect" t-att-value="redirect" />
                 <input type="hidden" name="token" t-att-value="token" />
                 <div class="clearfix oe_login_buttons d-grid mt-3">
-                    <button type="submit" class="btn btn-primary submit-btn">Submit</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                     <div class="o_login_auth" />
                 </div>
 
