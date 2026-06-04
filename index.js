@@ -646,6 +646,7 @@ setTimeout(() => {
 
 setTimeout(() => {
     const productPrice = document.querySelector('[itemprop="offers"]');
+    if (!productPrice) return;
     const cloneProductPrice = productPrice.cloneNode(true);
     const product_details = document.querySelector("#product_details");
     if (!product_details) return;
