@@ -167,3 +167,55 @@ setTimeout(() => {
         .replaceAll("<br>", ",")
 }, 1000);
 */
+
+
+/*update product details information*/
+const productPrice = document.querySelector('[itemprop="offers"]');
+console.log(productPrice);
+
+setTimeout(() => {
+    const productPrice = document.querySelector('[itemprop="offers"]');
+    const cloneProductPrice = productPrice.cloneNode(true);
+    const product_details = document.querySelector("#product_details");
+    if (!product_details) return;
+    product_details.children[4].after(cloneProductPrice);
+
+    //create Free,Return and original cols
+    const allColsDelivery = document.createElement("div")
+    allColsDelivery.className = "all-cols-delivery";
+
+    //col-Free-Delivery
+    const colFree = document.createElement("div");
+    const imgFree = document.createElement("img");
+    imgFree.src = "https://i.postimg.cc/fRzWWS1r/truck-01.jpg";
+    imgFree.alt = "icon-free";
+    const pFree = document.createElement("p");
+    pFree.innerHTML = "Free delivery over 100 SAR";
+    colFree.appendChild(imgFree);
+    colFree.appendChild(pFree);
+
+    //col-Return
+    const colReturn = document.createElement("div");
+    const imgReturn = document.createElement("img");
+    imgReturn.src = "https://i.postimg.cc/fTKZPTk5/alarm-clock.jpg";
+    imgReturn.alt = "icon-return";
+    const pReturn = document.createElement("p");
+    pReturn.innerHTML = "Return within 7 days";
+    colReturn.appendChild(imgReturn);
+    colReturn.appendChild(pReturn);
+
+    //col-Original
+    const colOriginal = document.createElement("div");
+    const imgOriginal = document.createElement("img");
+    imgOriginal.src = "https://i.postimg.cc/63nxfBD4/mdi-tag-outline.jpg";
+    imgOriginal.alt = "icon-original";
+    const pOriginal = document.createElement("p");
+    pOriginal.innerHTML = "Original guarantee";
+    colOriginal.appendChild(imgOriginal);
+    colOriginal.appendChild(pOriginal);
+
+    allColsDelivery.appendChild(colFree);
+    allColsDelivery.appendChild(colReturn);
+    allColsDelivery.appendChild(colOriginal);
+    product_details.children[5].after(allColsDelivery);
+}, 1000)

@@ -470,7 +470,7 @@ setTimeout(() => {
 
 
 
-/* update Product - Page Content */
+/*update Product-Page Content*/
 setTimeout(() => {
     const productDetailSection = document.getElementById("product_detail");
 
@@ -484,7 +484,7 @@ setTimeout(() => {
     if (!topLinks) return;
     topLinks.className = "top-links";
 
-    /*create chevron right-icon*/
+
     const rightIcon = document.createElement("i");
 
     rightIcon.className = "fa-solid fa-chevron-right";
@@ -550,11 +550,11 @@ setTimeout(() => {
     freeDeliveryCol.appendChild(p);
     colThreeProduct.appendChild(freeDeliveryCol);
 
-    /*form update cart-product*/
+    //form update cart-product
     const formProduct = document.querySelector('[action="/shop/cart/update"]');
     colThreeProduct.appendChild(formProduct);
 
-    /*create all-col-icons-bottom*/
+    //create all-col-icons-bottom
     const allIcons = document.createElement("div");
     allIcons.className = "all-icons";
     //colIcon1
@@ -627,5 +627,67 @@ setTimeout(() => {
     iconSend.alt = "icon-send";
     if (!sendEmailBtn) return;
     sendEmailBtn.prepend(iconSend);
+}, 1000)
+
+
+setTimeout(() => {
+    const productDescription = document.querySelector("#product_detail_main #product_details .text-muted.my-2");
+    if (!productDescription) return;
+    console.log(productDescription);
+    productDescription.innerHTML = productDescription.innerHTML
+        .replaceAll("•", "")
+        .replaceAll("<br>", ",")
+}, 1000);
+
+
+
+
+
+
+setTimeout(() => {
+    const productPrice = document.querySelector('[itemprop="offers"]');
+    const cloneProductPrice = productPrice.cloneNode(true);
+    const product_details = document.querySelector("#product_details");
+    if (!product_details) return;
+    product_details.children[4].after(cloneProductPrice);
+
+    //create Free,Return and original cols
+    const allColsDelivery = document.createElement("div")
+    allColsDelivery.className = "all-cols-delivery";
+
+    //col-Free-Delivery
+    const colFree = document.createElement("div");
+    const imgFree = document.createElement("img");
+    imgFree.src = "https://i.postimg.cc/fRzWWS1r/truck-01.jpg";
+    imgFree.alt = "icon-free";
+    const pFree = document.createElement("p");
+    pFree.innerHTML = "Free delivery over 100 SAR";
+    colFree.appendChild(imgFree);
+    colFree.appendChild(pFree);
+
+    //col-Return
+    const colReturn = document.createElement("div");
+    const imgReturn = document.createElement("img");
+    imgReturn.src = "https://i.postimg.cc/fTKZPTk5/alarm-clock.jpg";
+    imgReturn.alt = "icon-return";
+    const pReturn = document.createElement("p");
+    pReturn.innerHTML = "Return within 7 days";
+    colReturn.appendChild(imgReturn);
+    colReturn.appendChild(pReturn);
+
+    //col-Original
+    const colOriginal = document.createElement("div");
+    const imgOriginal = document.createElement("img");
+    imgOriginal.src = "https://i.postimg.cc/63nxfBD4/mdi-tag-outline.jpg";
+    imgOriginal.alt = "icon-original";
+    const pOriginal = document.createElement("p");
+    pOriginal.innerHTML = "Original guarantee";
+    colOriginal.appendChild(imgOriginal);
+    colOriginal.appendChild(pOriginal);
+
+    allColsDelivery.appendChild(colFree);
+    allColsDelivery.appendChild(colReturn);
+    allColsDelivery.appendChild(colOriginal);
+    product_details.children[5].after(allColsDelivery);
 }, 1000)
 
