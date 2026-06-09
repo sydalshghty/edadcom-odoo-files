@@ -1,3 +1,30 @@
+/*Start Main Style*/
+.container{
+    min-width: 100% !important;
+}
+.s_heading_6,
+.s_d_products_snippet_wrapper,
+.s_title,
+.s_clients_4,
+.s_icon_block_3,
+.tp-shop-page,
+.o_wsale_product_page{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+@media (max-width: 768px){
+    .s_heading_6,
+    .tp-droggol-builder-snippet,
+    .s_title,
+    .s_clients_4,
+    .s_icon_block_3,
+    .tp-shop-page,
+    .o_wsale_product_page{
+        padding-left: 0px;
+        padding-right: 0px;
+  }
+}
+/*End Main Style*/
 /*Start tp-preheader Style*/
 .tp-preheader {
     font-size: 16px;
@@ -331,16 +358,33 @@ header .navbar .container-fluid .nav .dropdown a.dropdown-toggle:hover span{
 .edadcom-offers-products .o_not_editable .card{
   min-width: 180px !important;
 }
-@media (max-width: 520px) {
-  .tp-droggol-builder-snippet .row .card,
-  .edadcom-offers-products .o_not_editable .card{
-    min-width: 160px !important;
-  }
 .tp-droggol-builder-snippet .row .card .d_product_box .d_product_info .d_product_info_lev_2 .d-add_to_cart_block button,
 .edadcom-offers-products .o_not_editable .card .d_product_box .d_product_info .d_product_info_lev_2 .d-add_to_cart_block button{
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
+@media (max-width: 520px) {
+  .tp-droggol-builder-snippet .row .card,
+  .edadcom-offers-products .o_not_editable .card{
+    min-width: 160px !important;
+  }
+}
+.tp-droggol-builder-snippet .row .col-lg-2,
+.edadcom-offers-products .o_not_editable .row .col-lg-2{
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+.edadcom-offers-products .o_not_editable .owl-item{
+    margin-right: 10px !important;
+}
+@media (max-width: 450px){
+    .tp-droggol-builder-snippet .row .card .d_product_box .d_product_info .d_product_info_lev_2 .d-add_to_cart_block button,
+    .edadcom-offers-products .o_not_editable .card .d_product_box .d_product_info .d_product_info_lev_2 .d-add_to_cart_block button{
+        font-size: 12px !important;
+    }
+    .edadcom-offers-products .o_not_editable .owl-item{
+        margin-right: 30px !important;
+    }
 }
 /*End tp-droggol-builder-snippet Style*/
 
@@ -1581,7 +1625,6 @@ header .navbar .container-fluid .nav .dropdown a.dropdown-toggle:hover span{
       z-index: 99999; 
   }
 }
-
 .s_tp_hierarchical_category_style_1{
     padding: 0px !important;
 }
@@ -1592,6 +1635,9 @@ header .navbar .container-fluid .nav .dropdown a.dropdown-toggle:hover span{
     .top_menu{
         display: none !important;
     }
+}
+.list-group-item span small{
+    display: none !important;
 }
 /*End Submenu-Categories Style*/
 
@@ -1607,7 +1653,7 @@ header .navbar .container-fluid .nav .dropdown a.dropdown-toggle:hover span{
 .login-page-content .col-register,
 .sign-up-content .col-register{
    max-width: 48% !important;
-    height: 708px;
+    height: 740px;
     background-color: #FEEEE7;
     padding: 32px 16px;
     border-radius: 8px;
@@ -1617,7 +1663,6 @@ header .navbar .container-fluid .nav .dropdown a.dropdown-toggle:hover span{
 .sign-up-content .oe_signup_form .col-heading,
 .sign-up-content .col-register .col-heading{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 16px;
 }
@@ -1718,7 +1763,7 @@ header .navbar .container-fluid .nav .dropdown a.dropdown-toggle:hover span{
 .login-page-content .oe_login_form,
 .sign-up-content .oe_signup_form{
    max-width: 48% !important;
-   height: 708px;
+   height: 740px;
     padding: 32px 16px !important;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -1745,13 +1790,11 @@ header .navbar .container-fluid .nav .dropdown a.dropdown-toggle:hover span{
     align-items: center;
     cursor: pointer;
 }
-.login-page-content .oe_login_form .remember-forget-col .col-remember span.active,
-.login-page-content .oe_login_form .check-robot-col .col-check span.active{
+.login-page-content .oe_login_form .remember-forget-col .col-remember span.active{
    background-color: #F26426;
    border: none;
 }
-.login-page-content .oe_login_form .remember-forget-col .col-remember span i,
-.login-page-content .oe_login_form .check-robot-col .col-check span i{
+.login-page-content .oe_login_form .remember-forget-col .col-remember span i{
     color: white;
 }
 .login-page-content .oe_login_form .remember-forget-col .col-remember p,
@@ -1764,38 +1807,7 @@ header .navbar .container-fluid .nav .dropdown a.dropdown-toggle:hover span{
   margin-top: 12px;
 }
 
-.login-page-content .oe_login_form .check-robot-col{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 270px;
-    height: 68px;
-    border: 1px solid #EBEBEB;
-    background-color: #ffffff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    padding: 8px 16px;
-    margin-bottom: 10px;
-}
-.login-page-content .oe_login_form .check-robot-col .col-check{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-.login-page-content .oe_login_form .check-robot-col .col-check span{
-   width: 24px;
-   height: 24px;
-   border: 1.65px solid #C4C4C4;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   cursor: pointer;
-}
-.login-page-content .oe_login_form .check-robot-col .col-check p{
-    margin-top: 12px;
-    font-size: 14px;
-    font-weight: 400;
-    color: #000000;
-}
+
 .login-page-content .oe_login_form .oe_login_buttons .small{
     display: none !important;
 }
@@ -1829,18 +1841,7 @@ header .navbar .container-fluid .nav .dropdown a.dropdown-toggle:hover span{
 .sign-up-content .signup-with-p::after{
     right: 61%;
 }
-.login-page-content .google-facebook-col,
-.sign-up-content .google-facebook-col{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.login-page-content .google-facebook-col img,
-.sign-up-content .google-facebook-col img{
-  width: 40%;
-  cursor: pointer;
-  object-fit: contain;
-}
+
 .sign-up-content .oe_signup_form .p-continuing{
     font-size: 16px;
     font-weight: 400;
@@ -1912,17 +1913,7 @@ header .navbar .container-fluid .nav .dropdown a.dropdown-toggle:hover span{
     .login-page-content .oe_login_form .remember-forget-col a{
         font-size: 12px;
     }
-    .login-page-content .oe_login_form .check-robot-col{
-        width: 220px;
-        height: 50px;
-    }
-    .login-page-content .oe_login_form .check-robot-col .col-check span{
-        width: 18px;
-        height: 18px;
-    }
-    .login-page-content .oe_login_form .check-robot-col .col-check span{
-        font-size: 12px;
-    }
+  
     .login-page-content .log-in-with-p,
     .sign-up-content .signup-with-p{
         font-size: 14px;
@@ -1944,10 +1935,6 @@ header .navbar .container-fluid .nav .dropdown a.dropdown-toggle:hover span{
     .login-page-content .log-in-with-p::after,
     .sign-up-content .signup-with-p::after{
         right: 0;
-    }
-     .login-page-content .oe_login_form .check-robot-col img{
-        width: 35px;
-        object-fit: contain;
     }
     .login-page-content .oe_login_form .btn,
     .login-page-content .col-register button,
@@ -2065,4 +2052,70 @@ header .navbar .container-fluid .nav .dropdown a.dropdown-toggle:hover span{
         font-size: 22px;
     }
 }
+.reset-password-alert form .alert-danger{
+    display: none !important;
+}
+
+/*update login,sign-up with google, facebook*/
+.oe_website_login_container .oe_login_form{
+   position: relative;
+}
+.oe_website_login_container .oe_login_form .o_auth_oauth_providers,
+.oe_website_login_container .oe_signup_form .o_auth_oauth_providers{
+    width: 100%;
+    position: absolute;
+    display: flex !important;
+    align-items: center;
+    flex-direction: row-reverse !important;
+    justify-content: start !important;
+    gap: 24px;
+    margin-top: 60px !important;
+    padding-right: 40px !important;
+}
+.oe_website_login_container .oe_signup_form .o_auth_oauth_providers{
+  margin-top: 0px !important;
+}
+.oe_website_login_container .oe_signup_form .o_login_auth em{
+    display: none !important;
+}
+.oe_website_login_container .oe_login_form .o_auth_oauth_providers a,
+.oe_website_login_container .oe_signup_form .o_auth_oauth_providers a{
+    height: 48px;
+    border: 1px solid #A4A5A8;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+.oe_website_login_container .oe_login_form .o_auth_oauth_providers a:hover,
+.oe_website_login_container .oe_signup_form .o_auth_oauth_providers a:hover{
+    background-color: transparent !important;
+}
+@media (max-width: 600px){
+  .oe_website_login_container .oe_login_form,
+  .oe_website_login_container .oe_signup_form{
+    padding-bottom: 160px !important;
+  }
+  .oe_website_login_container .oe_login_form .o_auth_oauth_providers,
+  .oe_website_login_container .oe_signup_form .o_auth_oauth_providers{
+      flex-direction: column !important;
+      gap: 10px !important;
+  }
+}
+
+.oe_website_login_container .oe_login_form input,
+.oe_website_login_container .oe_signup_form input,
+.oe_website_login_container .oe_login_form input::placeholder,
+.oe_website_login_container .oe_signup_form input::placeholder{
+    color: #000000 !important;
+}
 /*End login,Register page style*/
+
+#footer a,
+.o_footer_copyright a{
+    color: #fff !important;
+}

@@ -470,7 +470,7 @@ setTimeout(() => {
 
 
 
-/*update Product-Page Content*/
+/*Start update Product-Page Content*/
 setTimeout(() => {
     const productDetailSection = document.getElementById("product_detail");
 
@@ -636,6 +636,8 @@ setTimeout(() => {
     console.log(productDescription);
     productDescription.innerHTML = productDescription.innerHTML
         .replaceAll("•", "")
+        .replaceAll("✓", "")
+        .replaceAll("*", "")
         .replaceAll("<br>", ",")
 }, 1000);
 
@@ -649,8 +651,11 @@ setTimeout(() => {
     if (!productPrice) return;
     const cloneProductPrice = productPrice.cloneNode(true);
     const product_details = document.querySelector("#product_details");
-    if (!product_details) return;
-    product_details.children[4].after(cloneProductPrice);
+
+    const productDescription = document.querySelector(".text-muted.my-2");
+    if (!productDescription) return;
+    productDescription.after(cloneProductPrice);
+
 
     //create Free,Return and original cols
     const allColsDelivery = document.createElement("div")
@@ -689,6 +694,10 @@ setTimeout(() => {
     allColsDelivery.appendChild(colFree);
     allColsDelivery.appendChild(colReturn);
     allColsDelivery.appendChild(colOriginal);
-    product_details.children[5].after(allColsDelivery);
-}, 1000)
 
+    const col_price_product = document.querySelector(".col-price-product");
+    if (!col_price_product) return;
+    col_price_product.after(allColsDelivery);
+
+}, 1000)
+/*End update Product-Page Content*/

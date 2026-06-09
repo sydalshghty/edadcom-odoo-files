@@ -1,3 +1,4 @@
+
 /*Start Product-Page Style*/
 /*top-links-style*/
 #product_detail .top-links{
@@ -70,9 +71,6 @@
     display: flex;
    align-items: center;
     gap: 8px;
-}
-#product_detail #product_detail_main .col-three-product .col-delivery div img{
-
 }
 #product_detail #product_detail_main .col-three-product .col-delivery div p{
     font-size: 16px;
@@ -283,11 +281,6 @@
     font-size: 17px !important;
 }
 
-
-
-/*End Product-Page Style*/
-
-
 #product_detail #product_detail_main .o_carousel_product_outer{
     width: 450px !important;
 }
@@ -369,20 +362,16 @@
      display: block !important;
 }
 
-
-
-
-
-
 /*all-cols-delivery*/
 #product_detail #product_detail_main .all-cols-delivery{
     display: flex;
     gap: 20px;
 }
 #product_detail #product_detail_main .all-cols-delivery div{
-    width: 104px;
+    width: 110px;
     height: 96px;
-    padding: 16px;
+    padding: 8px;
+    padding-top: 16px;
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -393,13 +382,141 @@
     border-radius: 8px;
 }
 #product_detail #product_detail_main .all-cols-delivery div img{
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
 }
 #product_detail #product_detail_main .all-cols-delivery div p{
     font-size: 14px;
     font-weight: 400;
     color: #57595B;
     text-align: center;
-    padding-top: 12px;
+}
+
+#product_detail_main #product_details .o_product_page_reviews_link div i{
+    color: #FFCB45 !important;
+}
+#product_detail_main #product_details .o_product_page_reviews_link div small,
+#product_detail_main #product_details .text-muted,
+#product_detail_main #product_details .tp_extra_fields div h6,
+#product_detail_main #product_details .tp_extra_fields div ul li a{
+    font-size: 16px;
+    font-weight: 400;
+    color: #57595B;
+}
+#product_detail_main #product_details .tp_extra_fields div h6{
+    color: #000000 !important;
+}
+#product_detail_main #product_details .tp_extra_fields div ul li a{
+    font-size: 14px !important;
+}
+#product_detail_main #product_details .col-price-product del{
+    display: none;
+}
+/*End Product-Page Style*/
+
+
+
+
+.list-group-item span small{
+    display: none !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+
+
+/*add padding on all section website*/
+.s_heading_6,
+.tp-droggol-builder-snippet.all-cols-delivery,
+.s_title,
+.s_clients_4,
+.s_icon_block_3,
+.tp-shop-page,
+.o_wsale_product_page{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+@media (max-width: 768px){
+    .s_heading_6,
+    .tp-droggol-builder-snippet,
+    .s_title,
+    .s_clients_4,
+    .s_icon_block_3{
+        padding-left: 20px;
+        padding-right: 20px;
+}
+}
+
+#footer{
+    color: #fff !important;
+}
+
+/*Start Main Style*/
+.container{
+    min-width: 100% !important;
+}
+.s_heading_6,
+.tp-droggol-builder-snippet,
+.s_title,
+.s_clients_4,
+.s_icon_block_3,
+.tp-shop-page,
+.o_wsale_product_page{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+@media (max-width: 768px){
+    .s_heading_6,
+    .tp-droggol-builder-snippet,
+    .s_title,
+    .s_clients_4,
+    .s_icon_block_3,
+    .tp-shop-page,
+    .o_wsale_product_page{
+        padding-left: 0px;
+        padding-right: 0px;
+  }
+}
+
+.s_category_tabs_snippet{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+/*End Main Style*/
+
+.products-departamenet,
+.edadcom-offers-products
+
+{
+
+}
+
+
+.tp-droggol-builder-snippet .row .col-lg-2{
+    margin: 0px !important;
+    padding: 0px !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+
+
+
+
+
+
+
+
+.edadcom-offers-products .o_not_editable .owl-item{
+    margin-right: 10px !important;
+}
+
+@media (max-width: 450px){
+    .tp-droggol-builder-snippet .row .card .d_product_box .d_product_info .d_product_info_lev_2 .d-add_to_cart_block button,
+    .edadcom-offers-products .o_not_editable .card .d_product_box .d_product_info .d_product_info_lev_2 .d-add_to_cart_block button{
+        font-size: 12px !important;
+    }
+    .edadcom-offers-products .o_not_editable .owl-item{
+        margin-right: 5px !important;
+    }
 }

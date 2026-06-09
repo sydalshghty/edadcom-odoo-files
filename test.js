@@ -1,25 +1,25 @@
-/*update Product-Page Content*/
-/*setTimeout(() => {
+/*Start update Product-Page Content*/
+setTimeout(() => {
     const productDetailSection = document.getElementById("product_detail");
 
     const topLinks = document.querySelector(".tp-breadcrumb-wrapper");
-    
+
     const allLis = document.querySelectorAll(".tp-breadcrumb-wrapper ol li");
 
     if (!productDetailSection) return;
     productDetailSection.prepend(topLinks);
-    
+
     if (!topLinks) return;
     topLinks.className = "top-links";
 
-    
+
     const rightIcon = document.createElement("i");
 
     rightIcon.className = "fa-solid fa-chevron-right";
 
     allLis.forEach((li, index) => {
 
-        
+
         if (index !== allLis.length - 1) {
 
             li.appendChild(rightIcon.cloneNode(true));
@@ -29,11 +29,11 @@
     });
 
 }, 200)
-*/
+
 
 
 /*create col-three content on product-information*/
-/*setTimeout(() => {
+setTimeout(() => {
     const product_detail_main = document.getElementById("product_detail_main");
 
     const colThreeProduct = document.createElement("div");
@@ -49,7 +49,7 @@
     const mainDiv = document.createElement("a");
     mainDiv.href = "#"
     mainDiv.className = "col-delivery";
-    
+
     const childDiv = document.createElement("div");
     childDiv.className = "col-deliver";
     const img = document.createElement("img");
@@ -66,7 +66,7 @@
     mainDiv.appendChild(childDiv);
     mainDiv.appendChild(rightIcon);
     colThreeProduct.appendChild(mainDiv);
-    
+
     //create FREE-delivery
     const freeDeliveryCol = document.createElement("p");
     freeDeliveryCol.className = "freedelivery-col";
@@ -77,11 +77,11 @@
     freeDeliveryCol.appendChild(span);
     freeDeliveryCol.appendChild(p);
     colThreeProduct.appendChild(freeDeliveryCol);
-  
+
     //form update cart-product
     const formProduct = document.querySelector('[action="/shop/cart/update"]');
     colThreeProduct.appendChild(formProduct);
-    
+
     //create all-col-icons-bottom
     const allIcons = document.createElement("div");
     allIcons.className = "all-icons";
@@ -131,15 +131,15 @@
     allIcons.appendChild(colIcon_3);
 
     colThreeProduct.appendChild(allIcons);
-    
+
     if (!product_detail_main) return;
     product_detail_main.appendChild(colThreeProduct);
 }, 1000)
-*/
+
 
 
 /*update out of stock*/
-/*setTimeout(() => {
+setTimeout(() => {
     const notificationStock = document.querySelector("#product_stock_notification_message");
     const iconNotifiaction = document.createElement("img");
     iconNotifiaction.src = "https://i.postimg.cc/N0Jv8Sj0/bell-ringing-01.png";
@@ -160,26 +160,30 @@ setTimeout(() => {
 
 setTimeout(() => {
     const productDescription = document.querySelector("#product_detail_main #product_details .text-muted.my-2");
-   if (!productDescription) return;
+    if (!productDescription) return;
     console.log(productDescription);
     productDescription.innerHTML = productDescription.innerHTML
         .replaceAll("•", "")
+        .replaceAll("✓", "")
+        .replaceAll("*", "")
         .replaceAll("<br>", ",")
 }, 1000);
-*/
 
 
-/*update product details information*/
-const productPrice = document.querySelector('[itemprop="offers"]');
-console.log(productPrice);
+
+
+
 
 setTimeout(() => {
     const productPrice = document.querySelector('[itemprop="offers"]');
     if (!productPrice) return;
     const cloneProductPrice = productPrice.cloneNode(true);
     const product_details = document.querySelector("#product_details");
-    if (!product_details) return;
-    product_details.children[4].after(cloneProductPrice);
+
+    const productDescription = document.querySelector(".text-muted.my-2");
+    if (!productDescription) return;
+    productDescription.after(cloneProductPrice);
+
 
     //create Free,Return and original cols
     const allColsDelivery = document.createElement("div")
@@ -218,5 +222,34 @@ setTimeout(() => {
     allColsDelivery.appendChild(colFree);
     allColsDelivery.appendChild(colReturn);
     allColsDelivery.appendChild(colOriginal);
-    product_details.children[5].after(allColsDelivery);
+
+    const col_price_product = document.querySelector(".col-price-product");
+    if (!col_price_product) return;
+    col_price_product.after(allColsDelivery);
+
+}, 1000)
+/*End update Product-Page Content*/
+
+/*Change Icon Chevron Left, Right on Slider Products*/
+const owlPrevIcon = document.querySelector(".owl-prev i");
+const owlNextIcon = document.querySelector(".owl-next i");
+if (!owlPrevIcon) return;
+console.log(owlPrevIcon);
+owlPrevIcon.className = "fa-solid fa-chevron-left";
+
+if (!owlNextIcon) return;
+console.log(owlNextIcon);
+owlNextIcon.className = "fa-solid fa-chevron-right";
+
+setTimeout(() => {
+    /*Change Icon Chevron Left, Right on Slider Products*/
+    const owlPrevIcon = document.querySelector(".owl-prev i");
+    const owlNextIcon = document.querySelector(".owl-next i");
+    if (!owlPrevIcon) return;
+    console.log(owlPrevIcon);
+    owlPrevIcon.className = "fa-solid fa-chevron-left";
+
+    if (!owlNextIcon) return;
+    console.log(owlNextIcon);
+    owlNextIcon.className = "fa-solid fa-chevron-right";
 }, 1000)
