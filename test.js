@@ -253,3 +253,22 @@ setTimeout(() => {
     console.log(owlNextIcon);
     owlNextIcon.className = "fa-solid fa-chevron-right";
 }, 1000)
+
+
+
+const oe_search_button = document.querySelector(".oe_search_button");
+const iconSearch = document.createElement("img");
+iconSearch.src = "https://i.postimg.cc/BbnBV4qZ/search-md.png";
+iconSearch.alt = "icon-search";
+if (!oe_search_button) return;
+oe_search_button.appendChild(iconSearch);
+
+setTimeout(() => {
+    const oe_search_button = document.querySelectorAll(".oe_search_button")[0];
+    const iconSearch = document.createElement("img");
+    iconSearch.src = "https://i.postimg.cc/BbnBV4qZ/search-md.png";
+    iconSearch.alt = "icon-search";
+    if (!oe_search_button) return;
+    console.log(oe_search_button);
+    /* oe_search_button.appendChild(iconSearch);*/
+}, 1000)

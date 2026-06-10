@@ -701,3 +701,12 @@ setTimeout(() => {
 
 }, 1000)
 /*End update Product-Page Content*/
+//update change icon search navbar-top on mobile
+setTimeout(() => {
+    const oe_search_button = document.querySelectorAll(".oe_search_button")[1];
+    const iconSearch = document.createElement("img");
+    iconSearch.src = "https://i.postimg.cc/BbnBV4qZ/search-md.png";
+    iconSearch.alt = "icon-search";
+    if (!oe_search_button) return;
+    oe_search_button.appendChild(iconSearch);
+}, 1000)
