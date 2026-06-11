@@ -506,6 +506,7 @@ setTimeout(() => {
 
 /*create col-three content on product-information*/
 setTimeout(() => {
+
     const product_detail_main = document.getElementById("product_detail_main");
 
     const colThreeProduct = document.createElement("div");
@@ -519,7 +520,7 @@ setTimeout(() => {
 
     //create col-delivery
     const mainDiv = document.createElement("a");
-    mainDiv.href = "#"
+    mainDiv.href = "https://www.edadcom.com/shop/payment";
     mainDiv.className = "col-delivery";
 
     const childDiv = document.createElement("div");
@@ -551,7 +552,8 @@ setTimeout(() => {
     colThreeProduct.appendChild(freeDeliveryCol);
 
     //form update cart-product
-    const formProduct = document.querySelector('[action="/shop/cart/update"]');
+    const formProduct = document.querySelector('#product_details form');
+    if (!formProduct) return;
     colThreeProduct.appendChild(formProduct);
 
     //create all-col-icons-bottom
@@ -606,6 +608,30 @@ setTimeout(() => {
 
     if (!product_detail_main) return;
     product_detail_main.appendChild(colThreeProduct);
+
+    const html = document.querySelector("html");
+    if (!html) return;
+    const valueLang = html.getAttribute("lang");
+    if (valueLang == "en-US") {
+        pDeliver.innerText = "Deliver to Riyadh";
+        span.innerHTML = "FREE delivery";
+        p.innerText = "on over 100 SAR";
+        p2.innerText = "Free Returns Terms and Conditions Apply";
+        p3.innerText = "Secure payments";
+
+    }
+    else if (valueLang == "ar-001") {
+        pDeliver.innerText = "توصيل إلي الرياض";
+        rightIcon.style.display = "none";
+        span.innerHTML = "توصيل مجاني";
+        p.innerText = "على أكثر من 100 ريال سعودي"
+        p1.innerText = "ضمان لمدة عامين";
+        p2.innerText = "إرجاع مجاني _ تنطبق الشروط";
+        p3.innerText = "مدفوعات آمنة";
+
+    }
+    console.log(html);
+
 }, 1000)
 
 
@@ -656,6 +682,18 @@ setTimeout(() => {
     if (!productDescription) return;
     productDescription.after(cloneProductPrice);
 
+    //create col-best-drills-products
+    const bestDrillsLink = document.createElement("a");
+    bestDrillsLink.className = "best-drills-link";
+    bestDrillsLink.href = "https://www.edadcom.com/ar/shop/category/dwt-khrbyy-drills-and-drivers-11";
+
+    const imgBestDrills = document.createElement("img");
+    imgBestDrills.src = "https://i.postimg.cc/cH9k1cMj/Component-32-(2).png";
+    imgBestDrills.alt = "img-best-drills";
+
+    bestDrillsLink.appendChild(imgBestDrills);
+    if (!cloneProductPrice) return;
+    cloneProductPrice.after(bestDrillsLink);
 
     //create Free,Return and original cols
     const allColsDelivery = document.createElement("div")
@@ -695,11 +733,29 @@ setTimeout(() => {
     allColsDelivery.appendChild(colReturn);
     allColsDelivery.appendChild(colOriginal);
 
-    const col_price_product = document.querySelector(".col-price-product");
-    if (!col_price_product) return;
-    col_price_product.after(allColsDelivery);
 
-}, 1000)
+    const html = document.querySelector("html");
+    if (!html) return;
+    const valueLang = html.getAttribute("lang");
+    if (valueLang == "en-US") {
+        pFree.innerHTML = "Free delivery over 100 SAR";
+        pReturn.innerHTML = "Return within 7 days";
+        pOriginal.innerHTML = "Original guarantee";
+        imgBestDrills.src = "https://i.postimg.cc/cH9k1cMj/Component-32-(2).png";
+    }
+    else if (valueLang == "ar-001") {
+        pFree.innerHTML = "توصيل مجاني فوق 100 ريال";
+        pReturn.innerHTML = "الاسترجاع خلال7 أيام";
+        pOriginal.innerHTML = "ضمان أصلي";
+        imgBestDrills.src = "https://i.postimg.cc/7LVXZNnD/Component-32-(3).png";
+    }
+
+    /*const col_price_product = document.querySelector(".col-price-product");*/
+    if (!bestDrillsLink) return;
+    bestDrillsLink.after(allColsDelivery);
+
+}, 1000);
+
 /*End update Product-Page Content*/
 //update change icon search navbar-top on mobile
 setTimeout(() => {

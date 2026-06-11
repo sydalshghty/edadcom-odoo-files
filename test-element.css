@@ -100,3 +100,43 @@
         padding-right: 20px;
     }
 }
+
+.card-title a{
+
+}
+
+
+.card-title {
+    white-space: normal !important;
+    overflow: visible !important;
+    height: auto !important;
+    width: 100% !important;
+    text-align: start;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px !important;
+    flex-wrap: wrap !important;
+}
+
+.card-title a {
+    white-space: normal !important;
+}
+
+.best-drills-link{
+    margin-bottom: 20px !important;
+}
+
+
+#product_detail #product_detail_main .col-three-product form del{
+    color: #8A8C8F;
+    font-size: 20px !important;
+}
+
+.tp-preheader ul li a{
+    color: white !important;
+}
+
+.best-drills-link img{
+    width: 100%;
+    object-fit: contain;
+}

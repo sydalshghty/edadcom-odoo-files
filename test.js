@@ -1,39 +1,6 @@
-/*Start update Product-Page Content*/
-setTimeout(() => {
-    const productDetailSection = document.getElementById("product_detail");
-
-    const topLinks = document.querySelector(".tp-breadcrumb-wrapper");
-
-    const allLis = document.querySelectorAll(".tp-breadcrumb-wrapper ol li");
-
-    if (!productDetailSection) return;
-    productDetailSection.prepend(topLinks);
-
-    if (!topLinks) return;
-    topLinks.className = "top-links";
-
-
-    const rightIcon = document.createElement("i");
-
-    rightIcon.className = "fa-solid fa-chevron-right";
-
-    allLis.forEach((li, index) => {
-
-
-        if (index !== allLis.length - 1) {
-
-            li.appendChild(rightIcon.cloneNode(true));
-
-        }
-
-    });
-
-}, 200)
-
-
-
 /*create col-three content on product-information*/
 setTimeout(() => {
+
     const product_detail_main = document.getElementById("product_detail_main");
 
     const colThreeProduct = document.createElement("div");
@@ -47,7 +14,7 @@ setTimeout(() => {
 
     //create col-delivery
     const mainDiv = document.createElement("a");
-    mainDiv.href = "#"
+    mainDiv.href = "https://www.edadcom.com/shop/payment";
     mainDiv.className = "col-delivery";
 
     const childDiv = document.createElement("div");
@@ -79,7 +46,8 @@ setTimeout(() => {
     colThreeProduct.appendChild(freeDeliveryCol);
 
     //form update cart-product
-    const formProduct = document.querySelector('[action="/shop/cart/update"]');
+    const formProduct = document.querySelector('#product_details form');
+    if (!formProduct) return;
     colThreeProduct.appendChild(formProduct);
 
     //create all-col-icons-bottom
@@ -134,141 +102,49 @@ setTimeout(() => {
 
     if (!product_detail_main) return;
     product_detail_main.appendChild(colThreeProduct);
-}, 1000)
 
+    const html = document.querySelector("html");
+    if (!html) return;
+    const valueLang = html.getAttribute("lang");
+    if (valueLang == "en-US") {
+        pDeliver.innerText = "Deliver to Riyadh";
+        span.innerHTML = "FREE delivery";
+        p.innerText = "on over 100 SAR";
+        p2.innerText = "Free Returns Terms and Conditions Apply";
+        p3.innerText = "Secure payments";
+    }
+    else if (valueLang == "ar-001") {
+        pDeliver.innerText = "توصيل إلي الرياض";
+        rightIcon.style.display = "none";
+        span.innerHTML = "توصيل مجاني";
+        p.innerText = "على أكثر من 100 ريال سعودي";
 
+        p1.innerText = "ضمان لمدة عامين";
+        p2.innerText = "إرجاع مجاني _ تنطبق الشروط";
+        p3.innerText = "مدفوعات آمنة";
 
-/*update out of stock*/
-setTimeout(() => {
-    const notificationStock = document.querySelector("#product_stock_notification_message");
-    const iconNotifiaction = document.createElement("img");
-    iconNotifiaction.src = "https://i.postimg.cc/N0Jv8Sj0/bell-ringing-01.png";
-    iconNotifiaction.alt = "icon-notifaction";
-    if (!notificationStock) return;
-    notificationStock.prepend(iconNotifiaction);
-}, 1000)
-
-setTimeout(() => {
-    const sendEmailBtn = document.querySelector("#product_stock_notification_form_submit_button");
-    const iconSend = document.createElement("img");
-    iconSend.src = "https://i.postimg.cc/NFfKLWLh/Component-27.png";
-    iconSend.alt = "icon-send";
-    if (!sendEmailBtn) return;
-    sendEmailBtn.prepend(iconSend);
-}, 1000)
-
-
-setTimeout(() => {
-    const productDescription = document.querySelector("#product_detail_main #product_details .text-muted.my-2");
-    if (!productDescription) return;
-    console.log(productDescription);
-    productDescription.innerHTML = productDescription.innerHTML
-        .replaceAll("•", "")
-        .replaceAll("✓", "")
-        .replaceAll("*", "")
-        .replaceAll("<br>", ",")
-}, 1000);
-
-
-
-
-
-
-setTimeout(() => {
-    const productPrice = document.querySelector('[itemprop="offers"]');
-    if (!productPrice) return;
-    const cloneProductPrice = productPrice.cloneNode(true);
-    const product_details = document.querySelector("#product_details");
-
-    const productDescription = document.querySelector(".text-muted.my-2");
-    if (!productDescription) return;
-    productDescription.after(cloneProductPrice);
-
-
-    //create Free,Return and original cols
-    const allColsDelivery = document.createElement("div")
-    allColsDelivery.className = "all-cols-delivery";
-
-    //col-Free-Delivery
-    const colFree = document.createElement("div");
-    const imgFree = document.createElement("img");
-    imgFree.src = "https://i.postimg.cc/fRzWWS1r/truck-01.jpg";
-    imgFree.alt = "icon-free";
-    const pFree = document.createElement("p");
-    pFree.innerHTML = "Free delivery over 100 SAR";
-    colFree.appendChild(imgFree);
-    colFree.appendChild(pFree);
-
-    //col-Return
-    const colReturn = document.createElement("div");
-    const imgReturn = document.createElement("img");
-    imgReturn.src = "https://i.postimg.cc/fTKZPTk5/alarm-clock.jpg";
-    imgReturn.alt = "icon-return";
-    const pReturn = document.createElement("p");
-    pReturn.innerHTML = "Return within 7 days";
-    colReturn.appendChild(imgReturn);
-    colReturn.appendChild(pReturn);
-
-    //col-Original
-    const colOriginal = document.createElement("div");
-    const imgOriginal = document.createElement("img");
-    imgOriginal.src = "https://i.postimg.cc/63nxfBD4/mdi-tag-outline.jpg";
-    imgOriginal.alt = "icon-original";
-    const pOriginal = document.createElement("p");
-    pOriginal.innerHTML = "Original guarantee";
-    colOriginal.appendChild(imgOriginal);
-    colOriginal.appendChild(pOriginal);
-
-    allColsDelivery.appendChild(colFree);
-    allColsDelivery.appendChild(colReturn);
-    allColsDelivery.appendChild(colOriginal);
-
-    const col_price_product = document.querySelector(".col-price-product");
-    if (!col_price_product) return;
-    col_price_product.after(allColsDelivery);
+    }
+    console.log(html);
 
 }, 1000)
-/*End update Product-Page Content*/
 
-/*Change Icon Chevron Left, Right on Slider Products*/
-const owlPrevIcon = document.querySelector(".owl-prev i");
-const owlNextIcon = document.querySelector(".owl-next i");
-if (!owlPrevIcon) return;
-console.log(owlPrevIcon);
-owlPrevIcon.className = "fa-solid fa-chevron-left";
+//create col-best-drills-products
+const bestDrillsLink = document.createElement("a");
+bestDrillsLink.href = "https://www.edadcom.com/ar/shop/category/dwt-khrbyy-drills-and-drivers-11";
 
-if (!owlNextIcon) return;
-console.log(owlNextIcon);
-owlNextIcon.className = "fa-solid fa-chevron-right";
+const imgBestDrills = document.createElement("img");
+imgBestDrills.src = "https://i.postimg.cc/cH9k1cMj/Component-32-(2).png";
+imgBestDrills.alt = "img-best-drills";
 
-setTimeout(() => {
-    /*Change Icon Chevron Left, Right on Slider Products*/
-    const owlPrevIcon = document.querySelector(".owl-prev i");
-    const owlNextIcon = document.querySelector(".owl-next i");
-    if (!owlPrevIcon) return;
-    console.log(owlPrevIcon);
-    owlPrevIcon.className = "fa-solid fa-chevron-left";
-
-    if (!owlNextIcon) return;
-    console.log(owlNextIcon);
-    owlNextIcon.className = "fa-solid fa-chevron-right";
-}, 1000)
+bestDrillsLink.appendChild(imgBestDrills);
+if (!cloneProductPrice) return;
+cloneProductPrice.after(bestDrillsLink);
 
 
+const cloneProductPrice = productPrice.cloneNode(true);
 
-const oe_search_button = document.querySelector(".oe_search_button");
-const iconSearch = document.createElement("img");
-iconSearch.src = "https://i.postimg.cc/BbnBV4qZ/search-md.png";
-iconSearch.alt = "icon-search";
-if (!oe_search_button) return;
-oe_search_button.appendChild(iconSearch);
 
-setTimeout(() => {
-    const oe_search_button = document.querySelectorAll(".oe_search_button")[0];
-    const iconSearch = document.createElement("img");
-    iconSearch.src = "https://i.postimg.cc/BbnBV4qZ/search-md.png";
-    iconSearch.alt = "icon-search";
-    if (!oe_search_button) return;
-    console.log(oe_search_button);
-    /* oe_search_button.appendChild(iconSearch);*/
-}, 1000)
+const bestDrillsLink = document.createElement("a");
+
+bestDrillsLink.style.marginBottom = "20px";
+bestDrillsLink.className = "best-drills-link";
