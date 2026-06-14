@@ -1,80 +1,39 @@
-/*Start Style Top-Search-Mobile*/
-.s_searchbar .container .row div form .input-group input{
-    width: 100%;
-    height: 45px !important;
-    border-top-left-radius: 8px !important;
-    border-bottom-left-radius: 8px !important;
-    background-color: #eee !important;
-    font-size: 18px !important;
-    font-family: sans-serif !important;
-    font-weight: 500 !important;
-    color: #8A8C8F !important;
-}
-.s_searchbar .container .row div form .input-group input::placeholder{
-    padding-left: 4px !important;
-}
-.s_searchbar .container .row div form .input-group button{
-    background-color: #eee !important;
-    border-top-right-radius: 8px !important;
-    border-bottom-right-radius: 8px !important;
-    border-color: transparent !important;
-    height: 45px !important;
-}
-.s_searchbar .container .row div form .input-group button i{
-    font-size: 18px !important;
-    color: #8A8C8F !important;
-    width: 24px !important;
-    height: 24px !important;
-}
-@media (max-width: 420px){
-    #product_detail_main{
-        margin-top: -40px !important;
-    }
-}
-/*End Style Top-Search-Mobile*/
+/*Start update Style searchbar-top on mobile*/
 .s_searchbar{
+    position: sticky;
     width: 100% !important;
+    top: 40;
+    left: 0;
     background-color: #fff;
-    position: fixed;
-    left: 0;
-    z-index: 9999;
+    z-index: 99999999 !important;
 }
-.s_searchbar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    width: 100%;
-    min-width: 100% !important;
-    background-color: #fff !important;
-    display: none !important;
-}
-
 .s_searchbar p{
     display: none !important;
 }
-
 .s_searchbar .container-fluid .row form .input-group{
-    width: 100%;
-    height: 40px;
-    background-color: #F2F2F3;
-    padding-left: 8px;
-    padding-right: 8px;
+    min-width: 100%;
+    height: 45px;
     border-radius: 8px;
     border-color: none !important;
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
     flex-direction: row-reverse !important;
-    gap: 5px !important;
-    padding-left: 0px !important;
-    padding-right: 0px !important;
+    gap: 15px !important;
+    border: 1px solid #A4A5A8;
+    border-radius: 4px;
+    margin-top: 20px !important;
+    padding-bottom: 20px !important;
 }
 .s_searchbar .container-fluid .row form .input-group input{
     border: none !important;
     background-color: transparent !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
     font-size: 16px;
     font-weight: 400;
     color: #8A8C8F;
+}
+.s_searchbar .container-fluid .row form .input-group input{
+    border: none !important;
+    background-color: transparent !important;
 }
 .s_searchbar .container-fluid .row form .input-group button{
     border: none !important;
@@ -85,58 +44,6 @@
     background-color: transparent !important;
 }
 .s_searchbar .container-fluid .row form .input-group button i{
-    color: #8A8C8F !important;
     display: none !important;
 }
-@media (max-width: 992px){
-    #product_detail_main #product_details{
-        margin-top: 100px !important;
-    }
-}
-
-@media (max-width: 768px){
-    #product_detail #product_detail_main{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
-
-.card-title a{
-
-}
-
-
-.card-title {
-    white-space: normal !important;
-    overflow: visible !important;
-    height: auto !important;
-    width: 100% !important;
-    text-align: start;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 15px !important;
-    flex-wrap: wrap !important;
-}
-
-.card-title a {
-    white-space: normal !important;
-}
-
-.best-drills-link{
-    margin-bottom: 20px !important;
-}
-
-
-#product_detail #product_detail_main .col-three-product form del{
-    color: #8A8C8F;
-    font-size: 20px !important;
-}
-
-.tp-preheader ul li a{
-    color: white !important;
-}
-
-.best-drills-link img{
-    width: 100%;
-    object-fit: contain;
-}
+/*End update Style searchbar-top on mobile*/

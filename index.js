@@ -632,7 +632,7 @@ setTimeout(() => {
     }
     console.log(html);
 
-}, 1000)
+}, 500)
 
 
 
@@ -644,7 +644,7 @@ setTimeout(() => {
     iconNotifiaction.alt = "icon-notifaction";
     if (!notificationStock) return;
     notificationStock.prepend(iconNotifiaction);
-}, 1000)
+}, 500)
 
 setTimeout(() => {
     const sendEmailBtn = document.querySelector("#product_stock_notification_form_submit_button");
@@ -653,7 +653,7 @@ setTimeout(() => {
     iconSend.alt = "icon-send";
     if (!sendEmailBtn) return;
     sendEmailBtn.prepend(iconSend);
-}, 1000)
+}, 500)
 
 
 setTimeout(() => {
@@ -665,7 +665,7 @@ setTimeout(() => {
         .replaceAll("✓", "")
         .replaceAll("*", "")
         .replaceAll("<br>", ",")
-}, 1000);
+}, 500);
 
 
 
@@ -754,7 +754,7 @@ setTimeout(() => {
     if (!bestDrillsLink) return;
     bestDrillsLink.after(allColsDelivery);
 
-}, 1000);
+}, 500);
 
 /*End update Product-Page Content*/
 //update change icon search navbar-top on mobile
@@ -765,4 +765,10 @@ setTimeout(() => {
     iconSearch.alt = "icon-search";
     if (!oe_search_button) return;
     oe_search_button.appendChild(iconSearch);
-}, 1000)
+}, 500)
+
+setTimeout(() => {
+    const product_detail_main = document.getElementById("product_detail_main");
+    if (!product_detail_main) return;
+    product_detail_main.style.visibility = "visible";
+}, 500)

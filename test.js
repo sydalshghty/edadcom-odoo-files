@@ -148,3 +148,19 @@ const bestDrillsLink = document.createElement("a");
 
 bestDrillsLink.style.marginBottom = "20px";
 bestDrillsLink.className = "best-drills-link";
+
+const my_cart_quantity = document.querySelector(".my_cart_quantity");
+if (!my_cart_quantity) return;
+my_cart_quantity.classList.remove("badge");
+
+setTimeout(() => {
+    const my_cart_quantity = document.querySelector(".my_cart_quantity");
+    if (!my_cart_quantity) return;
+    my_cart_quantity.classList.remove("badge");
+}, 1000)
+
+setTimeout(() => {
+    const product_detail_main = document.getElementById("product_detail_main");
+    if (!product_detail_main) return;
+    product_detail_main.style.visibility = "visible";
+}, 500)
